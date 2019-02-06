@@ -5,7 +5,7 @@ date: "2018-05-06"
 
 ![Creating a twitter bot](./creating-twitter-bot-head-img.jpeg)
 
-Photo by freestocks.org on Unsplash
+###### Photo by freestocks.org on Unsplash
 
 Nowadays the use of social networks is considered a normal thing, something that is part of our daily life. Maybe most of the people even don’t think about it. They just use them automatically. Just like that.
 
@@ -20,3 +20,14 @@ If you google the topic, you will see that one of the most common examples for a
 This is how I ended up creating a Twitter bot with Node.js that sends direct messages to his followers with information about tweets relevant to certain search criteria.
 
 Enough talking for now, let’s begin the fun part.
+
+__TL;DR__
+
+The rest of the article will be a step by step tutorial of how to create a twitter bot and deploy it to [Heroku](https://www.heroku.com "Heroku's Homepage"). The bot will be sending private messages to his followers. The messages will contain tweets related to predefined search criteria. You may already be familiar with the term #hashtag. Practically such hashtags are going to be our search criteria or the words by which we will filter the tweets. In my case I have selected to use the following: #js, #javascript, #JavaScript, #JS, #Javascript, #react, #reactjs, #nodejs, #Nodejs. Which means that the bot will send messages with tweets mentioning them. Then we will fetch the IDs of all the followers that the bot has and use them to send direct messages back to them.
+
+If you want to skip right to the code, here is the [GitHub repo](https://github.com/mihailgaberov/twitter-bot "Twitter bot GitHub repo").
+
+Initial setup
+Setup the project via ___npm___:
+
+Since this is going to be Node.js based project, it makes sense to use the famous node package manager [NPM](https://www.npmjs.com/). First, make sure you have [Node.js](https://nodejs.org/en/) installed and then you can use _npm_.
