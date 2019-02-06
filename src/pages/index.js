@@ -10,12 +10,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <h1
-          css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-        >
+        <h1 css={css`display: inline-block;border-bottom: 1px solid;`}>
           Amazing Pandas Eating Things
         </h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
@@ -29,21 +24,21 @@ export default ({ data }) => {
               `
               }
             >
-            <h3
-              css={css`
+              <h3
+                css={css`
                 margin-bottom: ${rhythm(1 / 4)};
               `}
-            >
-              {node.frontmatter.title}{" "}
-              <span
-                css={css`
+              >
+                {node.frontmatter.title}{" "}
+                <span
+                  css={css`
                   color: #bbb;
                 `}
-              >
+                >
                 — {node.frontmatter.date}
               </span>
-            </h3>
-            <p>{node.excerpt}</p>
+              </h3>
+              <p>{node.excerpt}</p>
             </Link>
           </div>
         ))}
