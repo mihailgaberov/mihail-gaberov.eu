@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Mihailizing`,
+    author: 'Mihail Gaberov',
+    description: 'Personal blog by Mihail Gaberov. Learning by sharing.',
+    siteUrl: 'https://mihail-gaberov.eu/blog',
+    social: {
+      twitter: '@mihailgaberov',
+    },
   },
   plugins: [
     {
