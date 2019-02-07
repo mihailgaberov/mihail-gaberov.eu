@@ -15,6 +15,7 @@ Outdated: Hooks are still an experimental proposal. They’re currently in React
 ## TL;DR
 
 In this article we will attempt to understand what are [React Hooks](https://reactjs.org/docs/hooks-intro.html) and how to use them for our good. We will implement different examples and see the differences (gains) Hooks bring to us. If you want to skip the reading, [here](https://mihailgaberov.github.io/react-hooks/) you can find shorter version in a few slides. And [here](https://github.com/mihailgaberov/react-hooks) 🎁 you may get the examples and try them yourself.
+
 ---
 
 ## What are React Hooks?
