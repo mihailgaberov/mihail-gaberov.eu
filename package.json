@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Mihailizing",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "Personal blog by Mihail Gaberov",
+  "author": "Mihail Gaberov <mihail.gaberov@gmail.com>",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
@@ -32,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/mihailgaberov/mihail-gaberov.eu"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mihailgaberov/mihail-gaberov.eu/issues"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
