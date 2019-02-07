@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
+    "format": "cross-env prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "rm -rf public && rm -rf .cache && gatsby build"
@@ -39,6 +39,7 @@
     "url": "https://github.com/mihailgaberov/mihail-gaberov.eu/issues"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "eslint": "^5.13.0",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"

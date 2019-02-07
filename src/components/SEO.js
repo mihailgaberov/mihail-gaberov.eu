@@ -33,12 +33,12 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
             htmlAttributes={{ lang }}
             {...(title
               ? {
-                titleTemplate: `%s — ${siteMetadata.title}`,
-                title,
-              }
+                  titleTemplate: `%s — ${siteMetadata.title}`,
+                  title,
+                }
               : {
-                title: `${siteMetadata.title} — A blog by Mihail Gaberov`,
-              })}
+                  title: `${siteMetadata.title} — A blog by Mihail Gaberov`,
+                })}
             meta={[
               {
                 name: 'description',
@@ -76,15 +76,15 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
               .concat(
                 metaImage
                   ? [
-                    {
-                      property: 'og:image',
-                      content: metaImage,
-                    },
-                    {
-                      name: 'twitter:image',
-                      content: metaImage,
-                    },
-                  ]
+                      {
+                        property: 'og:image',
+                        content: metaImage,
+                      },
+                      {
+                        name: 'twitter:image',
+                        content: metaImage,
+                      },
+                    ]
                   : []
               )
               .concat(meta)}
