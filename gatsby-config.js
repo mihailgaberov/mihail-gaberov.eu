@@ -8,7 +8,7 @@ module.exports = {
       twitter: '@mihailgaberov',
     },
   },
-  pathPrefix: '/blog',
+  pathPrefix: `/blog`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -17,7 +17,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -36,13 +35,6 @@ module.exports = {
               maxWidth: 590,
             },
           },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -77,6 +69,13 @@ module.exports = {
               // If setting this to true, the parser won't handle and highlight inline
               // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: false,
+            },
+          },
+          "gatsby-remark-copy-linked-files",
+          {
+            resolve: 'gatsby-plugin-typography',
+            options: {
+              pathToConfigModule: 'src/utils/typography',
             },
           },
         ],
