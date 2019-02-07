@@ -66,7 +66,7 @@ __Custom hooks__
 
 __A custom Hook is a JavaScript function whose name starts with “use” and that may call other Hooks__. For example, [useFriendName](https://github.com/mihailgaberov/react-hooks/blob/master/src/useFriendName.jshttps://github.com/mihailgaberov/react-hooks/blob/master/src/useFriendName.js) below is our first custom Hook:
 
-```ecmascript 6
+```jsx
 export default function useFriendName(friendName) {
   const [isPresent, setIsPresent] = useState(false);
   
