@@ -10,11 +10,14 @@ __Updated: With React 16.8, [React Hooks](https://reactjs.org/docs/hooks-intro.h
 
 Outdated: Hooks are still an experimental proposal. They’re currently in React v16.7.0-alpha
 
-__TL;DR__
+---
+
+## TL;DR
 
 In this article we will attempt to understand what are [React Hooks](https://reactjs.org/docs/hooks-intro.html) and how to use them for our good. We will implement different examples and see the differences (gains) Hooks bring to us. If you want to skip the reading, [here](https://mihailgaberov.github.io/react-hooks/) you can find shorter version in a few slides. And [here](https://github.com/mihailgaberov/react-hooks) 🎁 you may get the examples and try them yourself.
+---
 
-__What are React Hooks?__
+## What are React Hooks?
 
 >_Simple functions for hooking into the React state and lifecycle features from function components._
 
@@ -28,7 +31,9 @@ Hooks are JavaScript functions, but they impose two additional [rules](https://r
 
 ❗️ Only call Hooks __from React function components__. Don’t call Hooks from regular JavaScript functions. There is just one other valid place to call Hooks — your own custom Hooks. We’ll see them later in this article.
 
-__Why are they good thing?__
+---
+
+## Why are they good thing?
 
 😟 __Reusing logic__
 Up until now, if we wanted to reuse some logic in React, we had two options: [higher-order components](https://tylermcginnis.com/react-higher-order-components/) or [render props](https://www.robinwieruch.de/react-render-props-pattern/). With React Hooks we have an alternative, that comes with a much easier to understand (in my personal opinion!) syntax and logic flow.
@@ -46,7 +51,9 @@ This is NOT to say that we (the developers) don’t have to learn these concepts
 
 > If you write a function component and realize you need to add some state to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function component. We’re going to do that in the next examples.
 
-__How to use React Hooks?__
+---
+
+## How to use React Hooks?
 
 React Hooks come to us as [built-in ones](https://reactjs.org/docs/hooks-overview.html) and [custom ones](https://reactjs.org/docs/hooks-custom.html). The later are the ones we can use for sharing logic across multiple React components.
 
@@ -56,13 +63,17 @@ As we’ve already learned, hooks are simple JavaScript functions, which means w
 
 The following examples try to illustrate that.
 
-__Basic built-in hooks__
+---
+
+## Basic built-in hooks
 
  - [useState](https://github.com/mihailgaberov/react-hooks/blob/master/src/components/Counter/CounterHooked.js) hook — returns a stateful value and a function to update it.
  - [useEffect](https://reactjs.org/docs/hooks-effect.html) hook — accepts a function that contains imperative, possibly effectful code (for example fetching data or subscribing to a service). This hook could return a function that is being executed every time before the effect runs and when the component is unmounted — to clean up from the last run.
  - [useContext](https://github.com/mihailgaberov/react-hooks/blob/master/src/components/Counter/CounterHooked.js) hook — accepts a [context](https://reactjs.org/docs/context.html) object and returns the current [context](https://github.com/mihailgaberov/react-hooks/blob/master/src/ColorContext.js) value, as given by the nearest context provider for the given context.
 
-__Custom hooks__
+---
+
+## Custom hooks
 
 __A custom Hook is a JavaScript function whose name starts with “use” and that may call other Hooks__. For example, [useFriendName](https://github.com/mihailgaberov/react-hooks/blob/master/src/useFriendName.jshttps://github.com/mihailgaberov/react-hooks/blob/master/src/useFriendName.js) below is our first custom Hook:
 
@@ -86,7 +97,9 @@ export default function useFriendName(friendName) {
 
 Building your own custom hooks lets you extract component logic into reusable functions. This could be your application’s shared functionality that you can import everywhere you need it. And also, we must not forget, that our custom hooks are the other allowed ([see the rules](https://reactjs.org/docs/hooks-rules.html#only-call-hooks-from-react-functions)) places to call built-in hooks.
 
-__Conclusion__
+---
+
+## Conclusion
 
 React Hooks are not really a new feature that popped out just now. They are another (better ❓) way of doing React components that need to have state and/or lifecycle methods. Actually, they use the same internal logic that is being used currently by the class components. To use them or not — this is the question to which the future will give the best answer.
 
@@ -96,7 +109,9 @@ Let’s see how the community will react to the proposal 📓 and hopefully we w
 
 🔥 Thanks for reading! 🔥
 
-__References__
+---
+
+## References
 
 Here you may find the links to the resources I found useful when writing this article:
 
