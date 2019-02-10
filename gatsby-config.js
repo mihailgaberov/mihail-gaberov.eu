@@ -8,7 +8,7 @@ module.exports = {
       twitter: '@mihailgaberov',
     },
   },
-  pathPrefix: `/blog`,
+  pathPrefix: `/`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
