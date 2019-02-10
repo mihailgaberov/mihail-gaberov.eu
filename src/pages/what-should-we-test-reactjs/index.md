@@ -4,7 +4,7 @@ date: "2018-07-12"
 ---
 
 ![What should we test ReactJS Components](./what-should-we-test-head.jpeg)
-###### Photo by Photo by [Artem Sapegin](https://unsplash.com/photos/ZMraoOybTLQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/unit-testing-reactjs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+###### Photo by [Artem Sapegin](https://unsplash.com/photos/ZMraoOybTLQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/unit-testing-reactjs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 There are a lot of discussions in the web when we talk about testing. And even more about unit testing. In [React](https://reactjs.org/).
 

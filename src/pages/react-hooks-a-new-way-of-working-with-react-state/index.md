@@ -4,7 +4,7 @@ date: "2018-11-08"
 ---
 
 ![React hooks: a new way of working with React state](./react-hooks-head.jpeg)
-###### Photo by Photo by [Brook Anderson](https://unsplash.com/photos/gTQbZXL417Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/unit-testing-reactjs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+###### Photo by [Brook Anderson](https://unsplash.com/photos/gTQbZXL417Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/unit-testing-reactjs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 __Updated: With React 16.8, [React Hooks](https://reactjs.org/docs/hooks-intro.html) are available in a stable release!__
 
