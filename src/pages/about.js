@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import './about.module.css';
+import aboutStyled from './about.module.css';
 import Footer from '../components/Footer';
 
 export default () => (
@@ -24,8 +24,7 @@ export default () => (
           <h3>Who I am</h3>
         </p>
         <p>
-          My name is Mihail Gaberov and I am a Lead Software Engineer / Senior
-          Front-End Developer.
+          My name is <span className={aboutStyled.accent}>Mihail Gaberov</span> and I am a <span className={aboutStyled.accent}>Lead Software Engineer / Senior Front-End Developer</span>.
         </p>
       </li>
       <li>
@@ -34,10 +33,7 @@ export default () => (
         </p>
         <p>
           Professionally I am focused mainly on developing web sites and
-          applications. Currently working mostly with
-          <a href="https://reactjs.org/" target="_blank">
-            React
-          </a>
+          applications. Currently working mostly with <a href="https://reactjs.org/" target="_blank">React</a>
           ,{' '}
           <a href="https://redux.js.org/" target="_blank">
             Redux

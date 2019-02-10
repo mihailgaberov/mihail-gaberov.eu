@@ -8,3 +8,8 @@ li:before {
   margin-left: -30px;
   top: 27px;
 }
+
+.accent {
+  color: #9f392b;
+  font-weight: bold;
+}
