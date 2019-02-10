@@ -91,7 +91,7 @@ export default () => (
         </p>
         <p>
           Here you can{' '}
-          <a href="https://mihail-gaberov.eu/data/Mihail_Gaberov_Resume_Oct_2018.pdf">
+          <a href="https://mihail-gaberov.eu/cv/Mihail_Gaberov_Resume_Oct_2018.pdf">
             check out my CV
           </a>
           , where my professional experience is described.
