@@ -3,7 +3,7 @@ module.exports = {
     title: `Mihailizing`,
     author: 'Mihail Gaberov',
     description: 'Personal blog by Mihail Gaberov. Learning by sharing.',
-    siteUrl: 'https://mihail-gaberov.eu/blog',
+    siteUrl: 'https://mihail-gaberov.eu',
     social: {
       twitter: '@mihailgaberov',
     },

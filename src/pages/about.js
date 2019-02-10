@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import './about.module.css';
+import Footer from '../components/Footer';
 
 export default () => (
   <Layout>
@@ -38,5 +39,6 @@ export default () => (
         href='mailto:mihail.gaberov@gmail.com'>mihail.gaberov[at]gmail.com</a> or <a
         href='mailto:me@mihail-gaberov.eu'>me[at]mihail-gaberov.eu</a></li>
     </ul>
+    <Footer/>
   </Layout>
 )
