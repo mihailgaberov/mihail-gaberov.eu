@@ -1,0 +1,10 @@
+ul {
+  list-style: none
+}
+
+li:before {
+  content: '🤓';
+  position: relative;
+  margin-left: -30px;
+  top: 27px;
+}
