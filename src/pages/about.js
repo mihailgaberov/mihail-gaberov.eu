@@ -10,19 +10,15 @@ export default () => (
       There is one phrase I really like and it describes me and my way of
       thinking very well.
     </p>
-    <p>
-      <i>
-        <blockquote>
-          If you want to really learn something, try teaching it to someone
-          else.
-        </blockquote>
-      </i>
-    </p>
+    <i>
+      <blockquote>
+        If you want to really learn something, try teaching it to someone
+        else.
+      </blockquote>
+    </i>
     <ul>
       <li>
-        <p>
-          <h3>Who I am</h3>
-        </p>
+        <h3>Who I am</h3>
         <p>
           My name is <span className={aboutStyled.accent}>Mihail Gaberov</span>{' '}
           and I am a{' '}
@@ -33,9 +29,7 @@ export default () => (
         </p>
       </li>
       <li>
-        <p>
-          <h3>What I do</h3>
-        </p>
+        <h3>What I do</h3>
         <p>
           Professionally I am focused mainly on developing web sites and
           applications. Currently working mostly with{' '}
@@ -94,9 +88,7 @@ export default () => (
         </p>
       </li>
       <li>
-        <p>
-          <h3>More about me</h3>
-        </p>
+        <h3>More about me</h3>
         <p>
           Here you can{' '}
           <a href="https://mihail-gaberov.eu/cv/Mihail_Gaberov_Resume_Oct_2018.pdf">
