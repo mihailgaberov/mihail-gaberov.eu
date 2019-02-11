@@ -9,6 +9,10 @@ li:before {
   top: 27px;
 }
 
+li:last-child:before {
+  content: '';
+}
+
 .accent {
   color: #9f392b;
   font-weight: bold;
