@@ -118,7 +118,7 @@ export default () => (
         <p>
           Here you can{' '}
           <a href="https://medium.com/@mihailgaberov">check out my Medium</a>{' '}
-          account, where are my articles published.
+          account, where my articles are published.
         </p>
       </li>
       <li>
