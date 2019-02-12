@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from "../components/SEO"
 import aboutStyled from './about.module.css';
 import Footer from '../components/Footer';
 
 export default () => (
   <Layout>
+    <SEO />
     <h1>About Me</h1>
     <p>
       There is one phrase I really like and it describes me and my way of
