@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import SEO from "../components/SEO"
+import SEO from '../components/SEO';
 import './about.css';
 import Footer from '../components/Footer';
 
@@ -14,23 +14,21 @@ export default () => (
     </p>
     <i>
       <blockquote>
-        If you want to really learn something, try teaching it to someone
-        else.
+        If you want to really learn something, try teaching it to someone else.
       </blockquote>
     </i>
     <ul>
-      <li className='about-me-bullet'>
+      <li className="about-me-bullet">
         <h3>Who I am</h3>
         <p>
-          My name is <span className="accent">Mihail Gaberov</span>{' '}
-          and I am a{' '}
+          My name is <span className="accent">Mihail Gaberov</span> and I am a{' '}
           <span className="accent">
             Lead Software Engineer / Senior Front-End Developer
           </span>
           .
         </p>
       </li>
-      <li className='about-me-bullet'>
+      <li className="about-me-bullet">
         <h3>What I do</h3>
         <p>
           Professionally I am focused mainly on developing web sites and
@@ -89,7 +87,7 @@ export default () => (
           etc.
         </p>
       </li>
-      <li className='about-me-bullet'>
+      <li className="about-me-bullet">
         <h3>More about me</h3>
         <p>
           Here you can{' '}

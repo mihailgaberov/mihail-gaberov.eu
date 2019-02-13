@@ -1,5 +1,5 @@
 import addToMailchimp from 'gatsby-plugin-mailchimp';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 import React from 'react';
 import './Signup.css';
 
@@ -12,19 +12,19 @@ class Signup extends React.Component {
 
   state = {
     email: '',
-    firstName: ''
+    firstName: '',
   };
 
-  handleSubmit = async (e) => {
+  handleSubmit = async e => {
     e.preventDefault();
     const { email, firstName } = this.state;
     const response = await addToMailchimp(email, {
       FNAME: firstName,
-      SLUG: this.props.slug
+      SLUG: this.props.slug,
     });
     const { msg, result } = response;
-    this.showMessage(result, msg)
-  }
+    this.showMessage(result, msg);
+  };
 
   showMessage = (status, message) => {
     // Clear previous shown messages
@@ -41,9 +41,9 @@ class Signup extends React.Component {
     node.appendChild(li);
   };
 
-  handleChange = (event) => {
+  handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-  }
+  };
 
   render() {
     return (
@@ -112,10 +112,11 @@ class Signup extends React.Component {
             </div>
           </div>
           <div data-element="column" className="formkit-column">
-            <ul ref={this.myRef}
-                className="formkit-alert formkit-alert-error"
-                data-element="errors"
-                data-group="alert"
+            <ul
+              ref={this.myRef}
+              className="formkit-alert formkit-alert-error"
+              data-element="errors"
+              data-group="alert"
             />
             <div data-element="fields" className="seva-fields formkit-fields">
               <div className="formkit-field">
@@ -163,7 +164,7 @@ class Signup extends React.Component {
                   fontWeight: 700,
                 }}
               >
-                <div className="formkit-spinner"/>
+                <div className="formkit-spinner" />
                 <span>Subscribe</span>
               </button>
             </div>

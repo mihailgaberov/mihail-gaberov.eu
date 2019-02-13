@@ -1,11 +1,11 @@
-import { css } from "@emotion/core"
+import { css } from '@emotion/core';
 import React from 'react';
-import Bio from "../components/Bio"
+import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
-import SEO from "../components/SEO"
+import SEO from '../components/SEO';
 import { rhythm } from '../utils/typography';
-import Signup from "../components/Signup"
+import Signup from '../components/Signup';
 
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
@@ -23,7 +23,7 @@ export default ({ data }) => {
       <main>
         <div>
           <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }}/>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </main>
       <aside>
@@ -33,10 +33,11 @@ export default ({ data }) => {
             fontFamily: systemFont,
           }}
         >
-          <Signup slug={post.fields.slug}/>
+          <Signup slug={post.fields.slug} />
         </div>
         <h3>
-          <Link css={css`
+          <Link
+            css={css`
               margin-bottom: ${rhythm(2)};
               display: inline-block;
               text-decoration: none;
@@ -46,12 +47,12 @@ export default ({ data }) => {
                 color: #9f392b;
               }
             `}
-                to={'/'}
+            to={'/'}
           >
             {data.site.siteMetadata.title}
           </Link>
         </h3>
-        <Bio/>
+        <Bio />
       </aside>
     </Layout>
   );
@@ -59,13 +60,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-   site {
-     siteMetadata {
+    site {
+      siteMetadata {
         title
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html,
+      html
       frontmatter {
         title
       }

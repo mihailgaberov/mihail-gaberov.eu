@@ -91,7 +91,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://mihail-gaberov.us20.list-manage.com/subscribe/post?u=f271fb373a7e9420c8f1cbc4b&amp;id=a8dd0dd016',
+        endpoint:
+          'https://mihail-gaberov.us20.list-manage.com/subscribe/post?u=f271fb373a7e9420c8f1cbc4b&amp;id=a8dd0dd016',
       },
     },
   ],
