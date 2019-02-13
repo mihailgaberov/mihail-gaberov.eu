@@ -26,7 +26,7 @@ export default ({ children }) => (
         <Link to={`/`}>
           <h3
             css={css`
-              margin-bottom: ${rhythm(2)};
+              margin-bottom: ${rhythm(.5)};
               display: inline-block;
               font-style: normal;
               :hover {
@@ -45,6 +45,7 @@ export default ({ children }) => (
         >
           About
         </Link>
+        <hr/>
         {children}
       </div>
     )}
