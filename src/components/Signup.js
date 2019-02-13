@@ -1,12 +1,54 @@
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+import PropTypes from "prop-types"
 import React from 'react';
-
 import './Signup.css';
 
 class Signup extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.myRef = React.createRef();
+  }
+
+  state = {
+    email: '',
+    firstName: ''
+  };
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    const { email, firstName } = this.state;
+    const response = await addToMailchimp(email, {
+      FNAME: firstName,
+      SLUG: this.props.slug
+    });
+    const { msg, result } = response;
+    this.showMessage(result, msg)
+  }
+
+  showMessage = (status, message) => {
+    // Clear previous shown messages
+    const node = this.myRef.current;
+    node.innerHTML = '';
+
+    // Set the proper css class and the message
+    const successClassName = 'formkit-alert-success';
+    const errorClassName = 'formkit-alert-error';
+    const li = document.createElement('li');
+    li.innerHTML = message;
+    node.classList.toggle(successClassName, status === 'success');
+    node.classList.toggle(errorClassName, status === 'error');
+    node.appendChild(li);
+  };
+
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  }
+
   render() {
     return (
       <form
-        action="https://app.convertkit.com/forms/812047/subscriptions"
+        onSubmit={this.handleSubmit}
         className="seva-form formkit-form"
         method="post"
         min-width="400 500 600 700 800"
@@ -70,18 +112,17 @@ class Signup extends React.Component {
             </div>
           </div>
           <div data-element="column" className="formkit-column">
-            <ul
-              className="formkit-alert formkit-alert-error"
-              data-element="errors"
-              data-group="alert"
+            <ul ref={this.myRef}
+                className="formkit-alert formkit-alert-error"
+                data-element="errors"
+                data-group="alert"
             />
-
             <div data-element="fields" className="seva-fields formkit-fields">
               <div className="formkit-field">
                 <input
                   className="formkit-input"
                   aria-label="Your first name"
-                  name="fields[first_name]"
+                  name="firstName"
                   placeholder="Your first name"
                   type="text"
                   style={{
@@ -90,15 +131,19 @@ class Signup extends React.Component {
                     color: 'rgb(0, 0, 0)',
                     fontWeight: 400,
                   }}
+                  value={this.state.firstName}
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="formkit-field">
                 <input
                   className="formkit-input"
-                  name="email_address"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
                   aria-label="Your email address"
                   placeholder="Your email address"
-                  required=""
+                  required
                   type="email"
                   style={{
                     borderColor: 'rgb(227, 227, 227)',
@@ -118,7 +163,7 @@ class Signup extends React.Component {
                   fontWeight: 700,
                 }}
               >
-                <div className="formkit-spinner" />
+                <div className="formkit-spinner"/>
                 <span>Subscribe</span>
               </button>
             </div>
@@ -142,5 +187,13 @@ class Signup extends React.Component {
     );
   }
 }
+
+Signup.defaultProps = {
+  slug: '',
+};
+
+Signup.propTypes = {
+  slug: PropTypes.string,
+};
 
 export default Signup;

@@ -17,6 +17,8 @@ export default ({ data }) => {
     <Layout>
       <SEO
         title={post.frontmatter.title}
+        description={post.frontmatter.spoiler}
+        slug={post.fields.slug}
       />
       <main>
         <div>
@@ -31,7 +33,7 @@ export default ({ data }) => {
             fontFamily: systemFont,
           }}
         >
-          <Signup/>
+          <Signup slug={post.fields.slug}/>
         </div>
         <h3>
           <Link css={css`
@@ -58,14 +60,17 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
    site {
-          siteMetadata {
-            title
-          }
-        }
+     siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      html,
       frontmatter {
         title
+      }
+      fields {
+        slug
       }
     }
   }

@@ -2,17 +2,12 @@ ul {
   list-style: none;
 }
 
-li:before {
+li.about-me-bullet:before {
   content: '🤓';
   position: relative;
   margin-left: -30px;
   top: 27px;
 }
-
-li:last-child:before {
-  content: '';
-}
-
 .accent {
   color: #9f392b;
   font-weight: bold;
