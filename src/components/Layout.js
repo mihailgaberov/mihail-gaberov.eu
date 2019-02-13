@@ -24,7 +24,7 @@ export default ({ children }) => (
         `}
       >
         <Link to={`/`}>
-          <h3
+          <h3 data-test="logo"
             css={css`
               margin-bottom: ${rhythm(.5)};
               display: inline-block;
