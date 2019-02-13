@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from "../components/SEO"
-import aboutStyled from './about.module.css';
+import './about.css';
 import Footer from '../components/Footer';
 
 export default () => (
@@ -22,9 +22,9 @@ export default () => (
       <li>
         <h3>Who I am</h3>
         <p>
-          My name is <span className={aboutStyled.accent}>Mihail Gaberov</span>{' '}
+          My name is <span className="accent">Mihail Gaberov</span>{' '}
           and I am a{' '}
-          <span className={aboutStyled.accent}>
+          <span className="accent">
             Lead Software Engineer / Senior Front-End Developer
           </span>
           .
