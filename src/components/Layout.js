@@ -23,8 +23,8 @@ export default ({ children }) => (
           padding-top: ${rhythm(1.5)};
         `}
       >
-        <Link to={`/`}>
-          <h3 data-test="logo"
+        <Link data-test="logo" to={`/`}>
+          <h3
             css={css`
               margin-bottom: ${rhythm(.5)};
               display: inline-block;
