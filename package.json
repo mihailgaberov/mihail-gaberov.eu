@@ -3,7 +3,7 @@
   "private": true,
   "description": "Mihailizing: Personal blog by Mihail Gaberov",
   "author": "Mihail Gaberov <mihail.gaberov@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://mihail-gaberov.eu/blog",
   "license": "MIT",
   "scripts": {
@@ -11,8 +11,12 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "cross-env prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
     "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "rimraf public && rimraf .cache && gatsby build --prefix-paths"
+    "start": "yarn run develop",
+    "build": "rimraf public && rimraf .cache && gatsby build --prefix-paths",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test": "start-server-and-test start http://localhost:8000 cy:run",
+    "test:interactive": "start-server-and-test start http://localhost:8000 cy:open"
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
@@ -51,6 +55,7 @@
     "eslint": "^5.13.0",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "start-server-and-test": "^1.7.11"
   }
 }
