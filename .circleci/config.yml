@@ -2,13 +2,14 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2.1
+version: 2
 
 jobs:
   build:
     docker:
       # specify the version you desire here
       - image: circleci/node:11.0.0
+      - image: cypress/base:8
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
