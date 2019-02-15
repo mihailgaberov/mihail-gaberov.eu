@@ -23,7 +23,7 @@ describe('Header area', () => {
   })
 
   it('hovering on the logo-like text should change its color', () => {
-    cy.visit('') // Using baseUrl from cypress.prod.json --> http://localhost:8000
+    cy.visit('') // Using baseUrl from cypress.json --> http://localhost:8000
     cy.get('[data-test=logo]').trigger('mouseenter')
     cy.get('[data-test=logo]').should('have.css', 'color').and('eq', 'rgb(159, 57, 43)')
   })
