@@ -36,8 +36,8 @@ jobs:
     steps:
       - build
       - deploy:
-        requires:
+          requires:
           - build
-        filters:
-          branches:
-            only: master
+          filters:
+            branches:
+              only: master
