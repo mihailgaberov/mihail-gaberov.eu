@@ -31,6 +31,8 @@ jobs:
           command: |
             ssh $SSH_USER@$SSH_HOST "scp -rp mihail-gaberov.eu/* $SSH_USER@$SSH_HOST:/public_html/"
   build-and-deploy:
+    machine:
+      enabled: true
     steps:
       - build
       - deploy:
