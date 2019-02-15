@@ -34,8 +34,8 @@ jobs:
 
       - save_cache:
           paths:
-            - node_modules
-            - /home/circleci/.cache/Cypress
+            - ~/.cache
+            - ~/.npm
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
