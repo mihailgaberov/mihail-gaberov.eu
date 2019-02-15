@@ -30,14 +30,14 @@ jobs:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "scp -rp mihail-gaberov.eu/* $SSH_USER@$SSH_HOST:/public_html/"
-  build-and-deploy:
-    machine:
-      enabled: true
-    steps:
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
       - build
       - deploy:
           requires:
-          - build
+            - build
           filters:
             branches:
               only: master
