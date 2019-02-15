@@ -21,4 +21,4 @@ jobs:
           key: v1-deps-{{ .Branch }}-{{ checksum "cypress.prod.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
-      - run: $(yarn bin)/cypress run
+      - run: $(yarn bin)/cypress run --env configFile=prod
