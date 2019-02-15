@@ -13,10 +13,10 @@
     "develop": "gatsby develop",
     "start": "yarn run develop",
     "build": "rimraf public && rimraf .cache && gatsby build --prefix-paths",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
-    "test": "start-server-and-test start http://localhost:8000 cy:run",
-    "test:interactive": "start-server-and-test start http://localhost:8000 cy:open"
+    "cy:run": "cypress run --env configFile=dev",
+    "cy:open": "cypress open --env configFile=dev",
+    "t": "start-server-and-test start http://localhost:8000 cy:run",
+    "t:interactive": "start-server-and-test start http://localhost:8000 cy:open"
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
