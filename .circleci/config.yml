@@ -32,7 +32,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync $GATSBY_BUILD_DIR s3://mihail-gaberov.eu --delete
+          command: aws s3 sync gatsby/public s3://mihail-gaberov.eu --delete
 workflows:
     version: 2
     build-deploy:
