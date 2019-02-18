@@ -13,12 +13,6 @@ jobs:
             - v1-deps-{{ .Branch }}-{{ checksum "cypress.prod.json" }}
             - v1-deps-{{ .Branch }}
             - v1-deps
-      - run: # test what branch we're on.
-          name: "What is the build URL?"
-          command: echo ${CIRCLE_BUILD_URL}
-      - run:
-          name: "What is the value of the working directory?"
-          command: echo ${CIRCLE_WORKING_DIRECTORY}
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfile
@@ -26,14 +20,15 @@ jobs:
           key: v1-deps-{{ .Branch }}-{{ checksum "cypress.prod.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
+      - run: yarn build
       - persist_to_workspace: # Persist the specified paths (workspace/echo-output)
           # into the workspace  for use in downstream job. Must be an absolute path,
           # or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: /
+          root: ./gatsby
           # Must be relative path from root
           paths:
-            - gatsby
+            - public
       - run: $(yarn bin)/cypress run --env configFile=prod
   deploy:
     docker:
@@ -41,7 +36,7 @@ jobs:
     steps:
       - attach_workspace:
             # Must be absolute path or relative path from working_directory
-            at: /workspace
+            at: /public
       - run:
           name: Install awscli
           command: sudo pip install awscli
