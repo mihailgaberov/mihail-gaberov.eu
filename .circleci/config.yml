@@ -20,12 +20,14 @@ jobs:
           key: v1-deps-{{ .Branch }}-{{ checksum "cypress.prod.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
-      - run: yarn build
+      - run:
+          name: Build the project
+          command: yarn build
       - persist_to_workspace: # Persist the specified paths (workspace/echo-output)
           # into the workspace  for use in downstream job. Must be an absolute path,
           # or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: ./gatsby
+          root: .
           # Must be relative path from root
           paths:
             - public
