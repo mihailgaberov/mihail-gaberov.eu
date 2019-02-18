@@ -38,7 +38,7 @@ jobs:
     steps:
       - attach_workspace:
             # Must be absolute path or relative path from working_directory
-            at: /public
+            at: /gatsby
       - run:
           name: Install awscli
           command: sudo pip install awscli
