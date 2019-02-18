@@ -5,7 +5,7 @@ jobs:
       - image: cypress/base:8
         environment:
           TERM: xterm
-    working_directory: ~/gatsby/
+    working_directory: "${CIRCLE_BUILD_URL}"
     steps:
       - checkout
       - restore_cache:
@@ -25,7 +25,7 @@ jobs:
           # into the workspace  for use in downstream job. Must be an absolute path,
           # or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: workspace
+          root: /
           # Must be relative path from root
           paths:
             - public
@@ -43,7 +43,7 @@ jobs:
           name: Deploy to S3
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync public/ \
+              aws s3 sync public \
               s3://mihail-gaberov.eu --delete
             else
               echo "Not master branch, dry run only"
