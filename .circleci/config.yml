@@ -31,9 +31,6 @@ jobs:
           # or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
           root: /
-          # Must be relative path from root
-          paths:
-            - /
       - run: $(yarn bin)/cypress run --env configFile=prod
   deploy:
     docker:
