@@ -33,7 +33,7 @@ jobs:
           root: /
           # Must be relative path from root
           paths:
-            - public
+            - /
       - run: $(yarn bin)/cypress run --env configFile=prod
   deploy:
     docker:
