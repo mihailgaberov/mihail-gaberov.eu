@@ -5,7 +5,7 @@ jobs:
       - image: cypress/base:8
         environment:
           TERM: xterm
-    working_directory: "${CIRCLE_BUILD_URL}"
+    working_directory: ~/gatsby/
     steps:
       - checkout
       - restore_cache:
@@ -13,6 +13,12 @@ jobs:
             - v1-deps-{{ .Branch }}-{{ checksum "cypress.prod.json" }}
             - v1-deps-{{ .Branch }}
             - v1-deps
+      - run: # test what branch we're on.
+          name: "What is the build URL?"
+          command: echo ${CIRCLE_BUILD_URL}
+      - run:
+          name: "What is the value of the working directory?"
+          command: echo ${CIRCLE_WORKING_DIRECTORY}
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfile
@@ -25,7 +31,7 @@ jobs:
           # into the workspace  for use in downstream job. Must be an absolute path,
           # or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: /
+          root: workspace
           # Must be relative path from root
           paths:
             - public
@@ -43,7 +49,7 @@ jobs:
           name: Deploy to S3
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync public \
+              aws s3 sync public/ \
               s3://mihail-gaberov.eu --delete
             else
               echo "Not master branch, dry run only"
