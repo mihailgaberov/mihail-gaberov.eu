@@ -6,8 +6,6 @@ jobs:
         environment:
           TERM: xterm
     working_directory: ~/gatsby/
-    environment:
-      GATSBY_BUILD_DIR: ~/gatsby/public
     steps:
       - checkout
       - restore_cache:
@@ -23,10 +21,21 @@ jobs:
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
       - run: $(yarn bin)/cypress run --env configFile=prod
+      - persist_to_workspace: # Persist the specified paths (workspace/echo-output)
+          # into the workspace  for use in downstream job. Must be an absolute path,
+          # or relative path from working_directory. This is a directory on the container which is
+          # taken to be the root directory of the workspace.
+          root: workspace
+          # Must be relative path from root
+          paths:
+            - public
   deploy:
     docker:
       - image: circleci/python:2.7-jessie
     steps:
+      - attach_workspace:
+            # Must be absolute path or relative path from working_directory
+            at: /workspace
       - run:
           name: Install awscli
           command: sudo pip install awscli
@@ -34,7 +43,7 @@ jobs:
           name: Deploy to S3
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync $GATSBY_BUILD_DIR \
+              aws s3 sync public/ \
               s3://mihail-gaberov.eu --delete
             else
               echo "Not master branch, dry run only"
