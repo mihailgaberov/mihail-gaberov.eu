@@ -3,7 +3,7 @@
   "private": true,
   "description": "Mihailizing: Personal blog by Mihail Gaberov",
   "author": "Mihail Gaberov <mihail.gaberov@gmail.com>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://mihail-gaberov.eu/blog",
   "license": "MIT",
   "scripts": {
