@@ -1,3 +1,4 @@
 {
-  "baseUrl": "https://mihail-gaberov.eu"
+  "baseUrl": "https://mihail-gaberov.eu",
+  "chromeWebSecurity": false
 }
