@@ -7,7 +7,7 @@
 // - make an assertion about the page content
 
 describe('Header area', () => {
-  it('clicking "About" link shows the about me page', () => {
+  it('Clicking "About" link shows the about me page', () => {
     cy.visit('')
     cy.contains('About').click()
 
@@ -15,16 +15,21 @@ describe('Header area', () => {
     cy.url().should('include', '/about/')
   })
 
-  it('clicking on the logo-like text shows main page', () => {
+  it('Clicking on the logo-like text shows main page', () => {
     cy.visit('/about')
     cy.contains('Mihailizing').click()
 
     cy.url().should('include', '/')
   })
 
-  it('hovering on the logo-like text should change its color', () => {
+  it('Hovering on the logo-like text should change its color', () => {
     cy.visit('') // Using baseUrl from cypress.json --> http://localhost:8000
     cy.get('[data-test=logo]').trigger('mouseenter')
     cy.get('[data-test=logo]').should('have.css', 'color').and('eq', 'rgb(159, 57, 43)')
+  })
+
+  it('There must be a horizontal line below', () => {
+    cy.visit('')
+    cy.get('[data-test=separator]').should('match', 'hr')
   })
 })

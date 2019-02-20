@@ -45,7 +45,7 @@ export default ({ children }) => (
         >
           About
         </Link>
-        <hr/>
+        <hr data-test="separator"/>
         {children}
       </div>
     )}
