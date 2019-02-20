@@ -15,8 +15,14 @@ export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
   let {
     previous,
-    next
+    next,
+    slug
   } = pageContext;
+
+  const GITHUB_USERNAME = 'mihailgaberov';
+  const GITHUB_REPO_NAME = 'mihail-gaberov.eu';
+  const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.slice(1, slug.length - 1)}/index.md`;
+  const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://mihail-gaberov.eu${slug}`)}`;
 
   return (
     <Layout>
@@ -26,10 +32,23 @@ export default ({ data, pageContext }) => {
         slug={post.fields.slug}
       />
       <main>
-        <div>
-          <h1>{post.frontmatter.title}</h1>
+        <article>
+          <header>
+            <h1>{post.frontmatter.title}</h1>
+          </header>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+          <footer>
+            <p>
+              <a href={discussUrl} target="_blank" rel="noopener noreferrer">
+                Discuss on Twitter
+              </a>
+              {` • `}
+              <a href={editUrl} target="_blank" rel="noopener noreferrer">
+                Edit on GitHub
+              </a>
+            </p>
+          </footer>
+        </article>
       </main>
       <aside>
         <div
