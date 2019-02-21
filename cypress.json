@@ -1,4 +1,5 @@
 {
   "baseUrl": "https://mihail-gaberov.eu",
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "failOnStatusCode": false
 }
