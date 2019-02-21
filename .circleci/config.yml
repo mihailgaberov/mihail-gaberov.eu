@@ -31,9 +31,9 @@ jobs:
           # Must be relative path from root
           paths:
             - public
-      - run:
-          name: Running Cypress E2E tests
-          command: $(yarn bin)/cypress run --env configFile=prod
+#      - run:
+#          name: Running Cypress E2E tests
+#          command: $(yarn bin)/cypress run --env configFile=prod
   deploy:
     docker:
       - image: circleci/python:2.7-jessie
