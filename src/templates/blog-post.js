@@ -13,16 +13,17 @@ const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  let {
-    previous,
-    next,
-    slug
-  } = pageContext;
+  let { previous, next, slug } = pageContext;
 
   const GITHUB_USERNAME = 'mihailgaberov';
   const GITHUB_REPO_NAME = 'mihail-gaberov.eu';
-  const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.slice(1, slug.length - 1)}/index.md`;
-  const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://mihail-gaberov.eu${slug}`)}`;
+  const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.slice(
+    1,
+    slug.length - 1
+  )}/index.md`;
+  const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
+    `https://mihail-gaberov.eu${slug}`
+  )}`;
 
   return (
     <Layout>

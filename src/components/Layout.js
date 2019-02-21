@@ -26,7 +26,7 @@ export default ({ children }) => (
         <Link data-test="logo" to={`/`}>
           <h3
             css={css`
-              margin-bottom: ${rhythm(.5)};
+              margin-bottom: ${rhythm(0.5)};
               display: inline-block;
               font-style: normal;
               :hover {
@@ -45,7 +45,7 @@ export default ({ children }) => (
         >
           About
         </Link>
-        <hr data-test="separator"/>
+        <hr data-test="separator" />
         {children}
       </div>
     )}

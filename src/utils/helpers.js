@@ -17,7 +17,8 @@ export function formatPostDate(date, lang) {
 }
 
 export function insertTrollsText() {
-  const asciiText = ' ____  __.                                                 \n' +
+  const asciiText =
+    ' ____  __.                                                 \n' +
     '|    |/ _|____   ____ ______    ___.__. ____  __ _________ \n' +
     '|      <_/ __ \\_/ __ \\\\____ \\  <   |  |/  _ \\|  |  \\_  __ \\\n' +
     '|    |  \\  ___/\\  ___/|  |_> >  \\___  (  <_> )  |  /|  | \\/\n' +
