@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import './about.css';
 import Footer from '../components/Footer';
+import CV from '../assets/cv/Mihail_Gaberov_Resume_Feb_2019.pdf';
 
 export default () => (
   <Layout>
@@ -91,7 +92,7 @@ export default () => (
         <h3>More about me</h3>
         <p>
           Here you can{' '}
-          <a href="https://mihail-gaberov.eu/cv/Mihail_Gaberov_Resume_Feb_2019.pdf">
+          <a href={CV}>
             check out my CV
           </a>
           , where my professional experience is described.
