@@ -1,6 +1,6 @@
 ---
 title: "How I build a chat app with React, TypeScript and Socket.io (part 1)"
-date: "2019-25-02"
+date: "2019-02-22"
 ---
 
 ![How I build a chat app with React, TypeScript and Socket.io (part 1)](./how-i-build-a-chat-app-head.jpeg)
