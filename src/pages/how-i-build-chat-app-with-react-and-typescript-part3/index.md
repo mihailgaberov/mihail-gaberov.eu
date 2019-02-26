@@ -72,3 +72,29 @@ We follow the same logic as above here. We have our [socket actions](https://git
  -  __Actions__ - contains actions for connecting the socket (the one dispatched from the Navigation component in the beginning when the application is started) and one for when the connection status is changed, i.e. showing if we are connected or not.
   - __Middleware__ - contains implementation of a simple socket middleware, which provides us with the minimum functionality we need in our chat app.
   - __Reducer__ - here is where our socketReducer function lives and where we define what happens when one of the actions above is dispatched.
+
+## Theming
+In order to implement possibility for setting different color themes in our application and considering the fact we are using styled-components, I used a [ThemeProvider](https://www.styled-components.com/docs/advanced) - component provided by them. [Here](https://github.com/mihailgaberov/chat/blob/master/src/theme/index.ts) is the implementation that includes defining objects with custom colors used in the themes.
+The logic behind applying the selected color theme resides [here](https://github.com/mihailgaberov/chat/blob/master/src/utilities/TranslationsProvider.tsx). Ideally the containing component should be named something different than TranslationsProvider, as it doesn't handle only the translations, as we see. We could add this to the list of future improvements/refactoring. Here is how the existing color themes look like:
+
+![Color themes](./1.png)
+
+### Utilities
+In almost every software project, at certain point, the need of common reusable functions emerges. This the moment when developers usually create a common shared file or files, containing such helpers functions. In our case this would be ___/utilities___ folder, that currently contains four files. I will go through each of them below and explain the logic behind my decision to create it and put it there:
+
+ - [common.ts](https://github.com/mihailgaberov/chat/blob/master/src/utilities/common.ts) - here is the place where I decide to put such common helper functions, which are supposed to be easily used where needed in the whole application. In this specific case you will find four functions used for time formatting, helper for defining the active page and for scrolling an element to bottom.
+ - [localStorageService.ts ](https://github.com/mihailgaberov/chat/blob/master/src/utilities/localStorageService.ts)- I have already mention this service in the [first part](https://mihail-gaberov.eu/how-i-build-chat-app-with-react-and-typescript-part1/) of this tutorial. Here is where all methods for manipulating the local storage live.
+ - [TranslationsProvider.tsx](https://github.com/mihailgaberov/chat/blob/master/src/utilities/TranslationsProvider.tsx) - this component was also mentioned multiple times, but for the sake of clarity I will mention it again here. It contains the logic for providing translations and color theme in the app.
+ - [withTranslations.tsx](https://github.com/mihailgaberov/chat/blob/master/src/utilities/withTranslations.tsx) - this is a [higher-order component (HOC)](https://tylermcginnis.com/react-higher-order-components/) which is responsible for attaching the application context (containing the translations and themes themselves) to any component being wrapped by it. Here is an example of how is it used:
+
+```jsx
+export default withTranslations(SettingsPage as React.FunctionComponent);
+```
+
+We have walked a long way to here and we still haven't started with the actual implementation. 
+
+>_That is a vivid pointer for us to show how important and extensive could be the planning phase of a project._
+
+Let's jump now to the implementation phase in the [next chapter](https://mihail-gaberov.eu/how-i-build-chat-app-with-react-and-typescript-part4/).
+
+🔥 Thanks for reading! 🔥
