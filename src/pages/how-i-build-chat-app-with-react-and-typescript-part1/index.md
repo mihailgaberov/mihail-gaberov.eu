@@ -1,5 +1,5 @@
 ---
-title: "How I build a chat app with React, TypeScript and Socket.io (part 1)"
+title: "How I built a chat app with React, TypeScript and Socket.io (part 1)"
 date: "2019-02-22"
 ---
 
