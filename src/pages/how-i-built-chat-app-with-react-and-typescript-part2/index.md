@@ -3,7 +3,7 @@ title: "How I built a chat app with React, TypeScript and Socket.io (part 2)"
 date: "2019-02-23"
 ---
 
-![How I build a chat app with React, TypeScript and Socket.io (part 2)](../how-i-built-chat-app-with-react-and-typescript-part1/how-i-build-a-chat-app-head.jpeg)
+![How I build a chat app with React, TypeScript and Socket.io (part 2)](../how-i-build-chat-app-with-react-and-typescript-part1/how-i-build-a-chat-app-head.jpeg)
 ###### Photo by [Steve Halama](https://unsplash.com/photos/Yhc7YGZlz3g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/coding-chat-application?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 
