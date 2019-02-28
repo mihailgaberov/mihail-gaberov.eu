@@ -7,6 +7,7 @@ class Bio extends React.Component {
     return (
       <div style={{ display: 'flex', marginBottom: rhythm(2) }}>
         <img
+          data-test="profile-pic"
           src={profilePic}
           alt={`Mihail Gaberov`}
           style={{
