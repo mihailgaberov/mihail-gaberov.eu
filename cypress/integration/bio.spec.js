@@ -8,6 +8,11 @@
 */
 
 describe('Bio area', () => {
+  it('should have bottom margin of 2.88rem', () => {
+    cy.visit('');
+    cy.get('[data-test=bio]').should('have.css', 'margin-bottom').and('eq', '51.84px');
+  });
+
   it('should have a rounded picture', () => {
     cy.visit('');
     cy.get('[data-test=profile-pic]').should('have.css', 'border-radius').and('eq', '50%');

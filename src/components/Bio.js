@@ -5,7 +5,7 @@ import { rhythm } from '../utils/typography';
 class Bio extends React.Component {
   render() {
     return (
-      <div style={{ display: 'flex', marginBottom: rhythm(2) }}>
+      <div data-test="bio" style={{ display: 'flex', marginBottom: rhythm(2) }}>
         <img
           data-test="profile-pic"
           src={profilePic}
