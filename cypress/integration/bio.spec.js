@@ -12,13 +12,13 @@ describe('Bio area', () => {
     cy.visit('')
   });
 
-  it('should have bottom margin of 2.88rem', () => {
+ /* it('should have bottom margin of 2.88rem', () => {
     cy.get('[data-test=bio]').should('have.css', 'margin-bottom').and('eq', '51.84px');
   });
 
   it('should have a rounded picture', () => {
     cy.get('[data-test=profile-pic]').should('have.css', 'border-radius').and('eq', '50%');
-  });
+  });*/
 
   it('should render paragraph with short text', () => {
     cy.get('p').should('contain', 'Personal blog by Mihail Gaberov. Learning by sharing.');
