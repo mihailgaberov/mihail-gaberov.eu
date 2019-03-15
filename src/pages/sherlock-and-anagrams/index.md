@@ -9,7 +9,7 @@ Solve "Sherlock and Anagrams" coding challenge in JavaScript
 
 
 ---
-This post is going to get you through my solution of a coding challenge called "Sherlock and Anagrams". You may take a look at it in [HackerRank](https://www.hackerrank.com/challenges/sherlock-and-anagrams/). I spent half a day (or maybe more) trying to solve it, with JavaScript. When I tried to google it, I could not find a decent JS solution. I found just one and it was not working correctly. Also any explanations were completely out of the question. That's why I decided to write an article about it and try to put some nice and easy to digest explanations along the way. Keep reading now!
+This post is going to get you through my solution of a coding challenge called "Sherlock and Anagrams". You may take a look at it in [HackerRank](https://www.hackerrank.com/challenges/sherlock-and-anagrams/). I spent a lot of time trying to solve it, with JavaScript. When I tried to google it, I could not find a decent JS solution. I found just one and it was not working correctly. Also any explanations were completely out of the question. That's why I decided to write an article about it and try to put some nice and easy to digest explanations along the way. Keep reading now!
 
 ⚠ CAUTION: _I will roll out my solution below with short explanations about each of the steps. If you want to give a try yourself, please stop here and go to HackerRank site_.
 
