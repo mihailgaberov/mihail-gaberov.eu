@@ -37,7 +37,7 @@ _I think here is a good moment to mention that the challenge in question is unde
 ### Anagrams
 Since we are going to look for anagrams, let's start with them. As it is described above, an anagram of one word is another word, that has the same length and is created with the same characters from the former one.
 
-[Animation for the anagram "Listen = Silent"](./anagram-listen-silent.gif)
+![Animation for the anagram "Listen = Silent"](./anagram-listen-silent.gif)
 
 So we will have to look for words and compare them with other words, in order to see if they are anagrammatic pairs. Once found, we will just count them.
 
