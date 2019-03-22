@@ -8,7 +8,7 @@ date: "2019-03-22"
 ---
 
 ## Intro
-Some time ago, before ↪️React Hooks ↩️were officially released, I have written [another article](https://mihail-gaberov.eu/react-hooks-a-new-way-of-working-with-react-state/) about them. It was an attempt to learn and explain this new feature. Now, when they are officially part of the last React releases, I have decided to revisit them and try to present better examples of their usage.
+Some time ago, before [React Hooks](https://reactjs.org/docs/hooks-intro.html) were officially released, I have written [another article](https://mihail-gaberov.eu/react-hooks-a-new-way-of-working-with-react-state/) about them. It was an attempt to learn and explain this new feature. Now, when they are officially part of the last React releases, I have decided to revisit them and try to present better examples of their usage.
 
 ## Why
 Right after my first presentation, I've received some very useful comments by a colleague of mine. Comments regarding the presentation and the examples, and advice of how I can do better. I kept these comments in my email for some time. And today I will try to follow them, so we can get better understanding about this feature, which now can be used in any new or existing project.
