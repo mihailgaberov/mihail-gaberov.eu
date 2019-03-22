@@ -49,9 +49,9 @@ ___
    __Hooks don't remove classes - we still can use classes if we want or need them.__
    
    __Hooks rules - we must follow them when using hooks:__
-   ☙ __Only Call Hooks at the Top Level_ -  this basically means that we must not call hooks (yes, remember, hooks are functions and we can call them) inside loops, conditions and nested functions. And we must follow the order in which Hooks are called. Note that you don't need to worry about this problem if you use the provided lint rule.
-     ☙ __Only Call Hooks from React Functions__ - this means we are not suppose to call Hooks from regular JavaScript functions. Instead, we should be calling them only from React function components or custom Hooks.
    
-   _I hope this article helps you feel more confident when using React Hooks_. 😏
+   ☙ __Only Call Hooks at the Top Level__ -  this basically means that we must not call hooks (yes, remember, hooks are functions and we can call them) inside loops, conditions and nested functions. And we must follow the order in which Hooks are called. Note that you don't need to worry about this problem if you use the provided lint rule.
+   
+  ☙ __Only Call Hooks from React Functions__  - this means we are not suppose to call Hooks from regular JavaScript functions. Instead, we should be calling them only from React function components or custom Hooks.
 
 🔥 Thanks for reading! 🔥
