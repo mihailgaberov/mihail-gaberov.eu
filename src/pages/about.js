@@ -127,7 +127,7 @@ export default () => (
         <a href="mailto:mihail.gaberov@gmail.com">
           mihail.gaberov[at]gmail.com
         </a>{' '}
-        or <a href="mailto:me@mihail-gaberov.eu">me[at]mihail-gaberov.eu</a>
+        or <a href="mailto:mihail.gaberov@zoho.com">mihail.gaberov[at]zoho.com</a>
       </li>
     </ul>
     <Footer />
