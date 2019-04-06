@@ -10,7 +10,7 @@ date: "2019-04-06"
 One of the easiest and most ignored thing to do, in order to boost up the performance of our JavaScript applications, is to learn how to write properly high performant loop statements. The idea of this article is to help with that.
 
 
->_We will see the main types of loops used in JavaScript and how can we write them in a performant way._
+>_We will see the main types of loop used in JavaScript and how can we write them in a performant way._
 
 ___
 
