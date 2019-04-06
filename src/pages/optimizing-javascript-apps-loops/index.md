@@ -151,11 +151,13 @@ It's similar to the _regular_ ```for``` loop only by its name. The way it works 
 Each iteration through this loop causes a property lookup either on the instance or on the prototype, which makes the ```for-in``` loop much slower than the other loops. For the same number of iterations, it could be seven time slower than the rest.
 
 ## Conclusion
-- The for, while, and do-while loops all have similar performance characteristics, and so no one loop type is significantly faster or slower than the others.
-- Avoid the for-in loop unless you need to iterate over a number of unknown object properties.
-- The best ways to improve loop performance are to __decrease the amount of work done per iteration and decrease the number of loop iterations__.
+👍 The for, while, and do-while loops all have similar performance characteristics, and so no one loop type is significantly faster or slower than the others.
 
-Hopefully this article will help you to improve your future loopings! ➿
+👍 Avoid the for-in loop unless you need to iterate over a number of unknown object properties.
+
+👍 The best ways to improve loop performance are to __decrease the amount of work done per iteration and decrease the number of loop iterations__.
+
+I hope this was useful for you as it was for me! 
 
 🔥 Thanks for reading! 🔥
 
