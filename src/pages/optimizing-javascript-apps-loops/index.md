@@ -47,10 +47,12 @@ Both of the statements above are valid for the other two faster loops as well (`
 for (var i = 0; i < items.length; i++){
     process(items[i]);
 }
+
 // minimizing property lookups
 for (var i = 0, len = items.length; i < len; i++){
     process(items[i]);
 }
+
 // minimizing property lookups and reversing
 for (var i = items.length; i--; ){
     process(items[i]);
@@ -79,12 +81,14 @@ var j = 0;
 while (j < items.length){
     process(items[j++]);
 }
+
 // minimizing property lookups
 var j = 0,
     count = items.length;
 while (j < count){
     process(items[j++]);
 }
+
 // minimizing property lookups and reversing
 var j = items.length;
 while (j--){
@@ -92,6 +96,67 @@ while (j--){
 }
 ```
 
+## Do-While Loop
 
+```do-while``` is the third type of loop and it's the only post-test loop in JavaScript. It is comprised of body loop and post-test condition:
+
+```jsx
+var i = 0;
+do {
+    //loop body
+} while (i++ < 10);
+```
+
+### Dissection
+In this type of loop, the loop body is executed at least once always, then the post-test condition is being evaluated, and if it's ```true```, another loop cycle is executed.
+
+### Optimizations
+```jsx
+// original loop
+var k = 0;
+do {
+    process(items[k++]);
+} while (k < items.length);
+
+// minimizing property lookups
+var k = 0,
+    num = items.length;
+do {
+    process(items[k++]);
+} while (k < num);
+
+// minimizing property lookups and reversing
+var k = items.length - 1;
+do {
+    process(items[k]);
+} while (k--);
+```
+
+## For-In Loop
+The fourth and the last type of loop is called ```for-in``` loop. It has very special purpose - __enumerates the named properties of any JavaScript object__. Here it is how it looks like:
+
+```jsx
+for (var prop in object){
+    //loop body
+}
+```
+
+### Dissection
+It's similar to the _regular_ ```for``` loop only by its name. The way it works is totally different. And this difference makes it much slower than the other three loops, which have equivalent performance characteristics such that it's not useful to try to determine which is fastest. Each time the loop is executed, the variable ```prop``` has the name of another property, which is a _string_, on the ```object```. It will execute until all properties have been returned. These would be the properties of the object itself, as well as the ones inherited through its prototype chain.
+
+### Notes
+>_You should never use "for-in" to iterate over members of an array._
+
+Each iteration through this loop causes a property lookup either on the instance or on the prototype, which makes the ```for-in``` loop much slower than the other loops. For the same number of iterations, it could be seven time slower than the rest.
+
+## Conclusion
+- The for, while, and do-while loops all have similar performance characteristics, and so no one loop type is significantly faster or slower than the others.
+- Avoid the for-in loop unless you need to iterate over a number of unknown object properties.
+- The best ways to improve loop performance are to __decrease the amount of work done per iteration and decrease the number of loop iterations__.
+
+Hopefully this article will help you to improve your future loopings! ➿
 
 🔥 Thanks for reading! 🔥
+
+## Resources
+["High Performance JavaScript" ](https://www.amazon.com/High-Performance-JavaScript-Application-Interfaces/dp/059680279X)- Nicholas C. Zakas
