@@ -12,6 +12,7 @@ One of the easiest and most ignored thing to do, in order to boost up the perfor
 
 >_We will see the main types of loop used in JavaScript and how can we write them in a performant way._
 
+Let's begin!
 ___
 
 ## LOOP PERFORMANCE
@@ -108,7 +109,7 @@ do {
 ```
 
 ### Dissection
-In this type of loop, the loop body is executed at least once always, then the post-test condition is being evaluated, and if it's ```true```, another loop cycle is executed.
+In this type of loop, the loop body is executed always at least once, then the post-test condition is being evaluated, and if it's ```true```, another loop cycle is executed.
 
 ### Optimizations
 ```jsx
