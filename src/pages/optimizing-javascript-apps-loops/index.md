@@ -157,7 +157,7 @@ Each iteration through this loop causes a property lookup either on the instance
 
 👍 The best ways to improve loop performance are to __decrease the amount of work done per iteration and decrease the number of loop iterations__.
 
-I hope this was useful for you as it was for me! 
+I hope this was useful for you, as it was for me!
 
 🔥 Thanks for reading! 🔥
 
