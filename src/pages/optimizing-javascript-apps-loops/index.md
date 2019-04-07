@@ -7,7 +7,7 @@ date: "2019-04-06"
 ###### Photo by [Zachary Young](https://unsplash.com/photos/7NtiJBowheE?utm_source=unsplash&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/loops?utm_source=unsplash&utm_content=creditCopyText)
 ---
 
-One of the easiest and most ignored thing to do, in order to boost up the performance of our JavaScript applications, is to learn how to write properly high performant loop statements. The idea of this article is to help with that.
+One of the easiest and most ignored thing to do, in order to boost up the performance of our JavaScript applications, is to learn how to write properly high performant loop statements. The idea behind this article is to help with that.
 
 
 >_We will see the main types of loop used in JavaScript and how can we write them in a performant way._
