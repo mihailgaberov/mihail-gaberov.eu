@@ -148,7 +148,7 @@ It's similar to the _regular_ ```for``` loop only by its name. The way it works 
 ### Notes
 >_You should never use "for-in" to iterate over members of an array._
 
-Each iteration through this loop causes a property lookup either on the instance or on the prototype, which makes the ```for-in``` loop much slower than the other loops. For the same number of iterations, it could be seven time slower than the rest.
+Each iteration through this loop causes a property lookup either on the instance or on the prototype, which makes the ```for-in``` loop much slower than the other loops. For the same number of iterations, it could be seven times slower than the rest.
 
 ## Conclusion
 👍 The for, while, and do-while loops all have similar performance characteristics, and so no one loop type is significantly faster or slower than the others.
