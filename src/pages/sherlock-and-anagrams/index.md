@@ -1,5 +1,5 @@
 ---
-title: "Sherlock and Anagrams"
+title: "How to solve the Sherlock and Anagrams coding challenge in JavaScript"
 date: "2019-03-15"
 ---
 Solve "Sherlock and Anagrams" coding challenge in JavaScript
