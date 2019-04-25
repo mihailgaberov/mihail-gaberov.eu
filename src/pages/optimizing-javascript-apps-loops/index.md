@@ -1,5 +1,5 @@
 ---
-title: "Optimizing JavaScript Apps: Loops"
+title: "How to optimize your JavaScript apps using Loops"
 date: "2019-04-06"
 ---
 
