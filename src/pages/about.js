@@ -126,8 +126,7 @@ export default () => (
         <i>If you wish to contact me, just send me an email to</i>{' '}
         <a href="mailto:mihail.gaberov@gmail.com">
           mihail.gaberov[at]gmail.com
-        </a>{' '}
-        or <a href="mailto:mihail.gaberov@zoho.com">mihail.gaberov[at]zoho.com</a>
+        </a>
       </li>
     </ul>
     <Footer />
