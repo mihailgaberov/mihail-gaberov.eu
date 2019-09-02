@@ -3,7 +3,7 @@ title: "How to optimize your JavaScript apps using Loops"
 date: "2019-04-06"
 ---
 
-![React Hooks: Revisited](./optimizing-javascript-apps-loops.jpg)
+![How To Optimize your JavaScript Apps Using Loops](./optimizing-javascript-apps-loops.jpg)
 ###### Photo by [Zachary Young](https://unsplash.com/photos/7NtiJBowheE?utm_source=unsplash&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/loops?utm_source=unsplash&utm_content=creditCopyText)
 ---
 
