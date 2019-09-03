@@ -66,6 +66,8 @@ At the time of writing these series I was thinking it might be very interesting 
 
 In any case, I am thinking about it as a pure, technical comparison of two major UI libraries from the developer's point of view.
 
+Another possible extension would be to add video chat functionality using WebRCT or similar technology.
+
 >_If I do it, I will make sure you know it!_
 
 🔥 Thanks for reading! 🔥
