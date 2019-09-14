@@ -22,7 +22,7 @@ class Bio extends React.Component {
           Personal blog by{' '}
           <a
             href="https://www.linkedin.com/in/mihail-gaberov-6a73b03a/"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             Mihail Gaberov
           </a>
