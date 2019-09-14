@@ -34,53 +34,53 @@ export default () => (
         <p>
           Professionally I am focused mainly on developing web sites and
           applications. Currently working mostly with{' '}
-          <a href="https://reactjs.org/" target="_blank">
+          <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
             React
           </a>
           ,{' '}
-          <a href="https://redux.js.org/" target="_blank">
+          <a href="https://redux.js.org/" target="_blank" rel="noreferrer">
             Redux
           </a>{' '}
           and/or pure{' '}
-          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noreferrer">
             Javascript
           </a>{' '}
           or{' '}
-          <a href="http://www.typescriptlang.org/index.html" target="_blank">
+          <a href="http://www.typescriptlang.org/index.html" target="_blank" rel="noreferrer">
             TypeScript
           </a>
           . Essential knowledge of{' '}
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             HTML5
           </a>
           /
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             CSS3
           </a>
           (
-          <a href="https://sass-lang.com/" target="_blank">
+          <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
             SASS
           </a>
           /
-          <a href="http://lesscss.org/" target="_blank">
+          <a href="http://lesscss.org/" target="_blank" rel="noreferrer">
             LESS
           </a>
           )/
-          <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank">
+          <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank" rel="noreferrer">
             JS(ES6/ES7)
           </a>
           . Previous experience with{' '}
-          <a href="https://angularjs.org/" target="_blank">
+          <a href="https://angularjs.org/" target="_blank" rel="noreferrer">
             AngularJS
           </a>{' '}
           (both JS and Typescript versions) and{' '}
-          <a href="https://aurelia.io/" target="_blank">
+          <a href="https://aurelia.io/" target="_blank" rel="noreferrer">
             Aurelia
           </a>{' '}
           (previously called Durandal) front-end frameworks. Besides that, I
@@ -99,26 +99,26 @@ export default () => (
         </p>
         <p>
           Here you can{' '}
-          <a href="https://www.linkedin.com/in/mihail-gaberov-6a73b03a/">
+          <a href="https://www.linkedin.com/in/mihail-gaberov-6a73b03a/" rel="noreferrer" target="_blank">
             check out my LinkedIn
           </a>{' '}
           account, where you also can take a look at my professional life.
         </p>
         <p>
           Here you can{' '}
-          <a href="https://github.com/mihailgaberov">check out my GitHub</a>{' '}
+          <a href="https://github.com/mihailgaberov" target="_blank" rel="noreferrer">check out my GitHub</a>{' '}
           account, where most of my pet projects live.
         </p>
         <p>
           Here you can{' '}
-          <a href="https://mobile.twitter.com/mihailgaberov">
+          <a href="https://mobile.twitter.com/mihailgaberov" target="_blank" rel="noreferrer">
             check out my Twitter
           </a>{' '}
           account, where I publish my (or others) thoughts, I find interesting.
         </p>
         <p>
           Here you can{' '}
-          <a href="https://medium.com/@mihailgaberov">check out my Medium</a>{' '}
+          <a href="https://medium.com/@mihailgaberov" target="_blank" rel="noreferrer">check out my Medium</a>{' '}
           account, where my articles are published.
         </p>
       </li>
