@@ -140,7 +140,7 @@ I have added these as [issues in my GitHub](https://github.com/mihailgaberov/des
 ## Deploy on Netlify
 To deploy your application to Netlify platform you need to create an account first. Go to [their website](https://www.netlify.com/) and sign up for new account. After that go ahead and login. While still under Sites section, you should see a button for deploying new site from Git.
 
-![Deploy from Git button](./new_site_from_git_btn.png)
+![Deploy from Git button](new-site-from-git-btn.png)
 
 Click it and follow the steps to create a new site for deployment from your GitHub repositories. Your process should be similar to what is shown in the image below.
 
