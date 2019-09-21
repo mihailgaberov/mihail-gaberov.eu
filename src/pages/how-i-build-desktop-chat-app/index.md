@@ -29,6 +29,22 @@ Let’s step back for a while and think. Try asking yourself the questions who w
 
 _Below I am going to lay out my questions and the answers. This is the process of the actual building the structure of the app, but in your head first. Keep in mind that it happens very often such that when answering a question new questions appear. This was the case with me as well._
 
+__Questions:__
+
+- What am I doing? 😆
+- What kind of app am I going to be building?
+- What are the most common components, such an app needs to have?
+- How do the app’s components interact with each other?
+- What level of completion am I aiming for — (demo apps are not supposed to be fully featured)?
+
+
+__Answers__ (following the order of the questions):
+
+- This is the most neglected question that many people forget to think about. _When one can step aside first and give a clear answer to this question, his path for future developments becomes settled_. In my specific case the answer I got sounds something like this — “I am thinking about building a chat app. This app should serve as a tutorial demo app. It will have to provide basic functionality for ‘having a chat’ by using CometChat API. It should run on a desktop”. The styling and specific details about what goes where will come later in the process.
+- A chat app that will run on desktop and serve as a demo for this tutorial.
+- To give a proper answer to this question, a non-familiar person would have to do some research first. Take a look at real-world chat applications. Make notes of what features they have. How are they put them in place, how do they interact between them and with the users of the app. In my case, I had some [previous experience](https://mihail-gaberov.eu/how-i-build-chat-app-with-react-and-typescript-part1/) and got, more or less, the idea of what I need.
+- The interaction between the components would be pretty straight forward. The user should be able to use the main component that is a text input and a button to send messages. And a sidebar component to see the other chat participants.
+- The demo app should provide basic chat functionality — send and receive real-time messages. And be able to run on a desktop (without a browser).
 
 
 🔥 Thanks for reading! 🔥
