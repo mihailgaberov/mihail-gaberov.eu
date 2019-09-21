@@ -93,5 +93,20 @@ The part of our application that makes it possible for our app to run on desktop
 Since we mentioned the other big player in the field of building cross-platform desktop apps, let me give you a brief comparison between the two.
 
 
+## Nw.js vs Electron
+- Entry of Application
+  - In NW.js the main entry point of an application is a web page or a JS script. You specify an HTML or js file in the package.json and it is opened in a browser window as the application's main window (in case of an HTML entrypoint) or the script is executed.
+  - In Electron, the entry point is a JavaScript script.
+- Build System
+  - Nw.js uses Chromium
+  - Electron uses [libchromiumcontent](https://github.com/electron/libchromiumcontent) to access Chromium's Content API. libchromiumcontent is a single shared library that includes the Chromium Content module and all of its dependencies.
+- Node Integration
+  - In NW.js, the Node integration in web pages requires patching Chromium to work.
+  - In Electron uses a different way to integrate the libuv loop with each platform's message loop to avoid hacking Chromium.
+- Multi-context
+  - Because of how NW.js was implemented concepts of Node context and web context were invented.
+  - By using the [multi-context](https://github.com/nodejs/node-v0.x-archive/commit/756b622) feature of Node, Electron doesn't introduce a new JavaScript context in web pages.
+
+
 
 🔥 Thanks for reading! 🔥
