@@ -3,13 +3,15 @@ title: "How I build a desktop chat app with CometChat and NW.js (and how you can
 date: "2019-09-17"
 ---
 
+![Chat Screen](./chat-screen.png)
+###### Chat Screen
+---
+
 This is not your typical "_paste this here_" and "_paste that there_"-type tutorial (you can find plenty of those here on [cometchat.com/tutorials](https://www.cometchat.com/tutorials/desktop-chat-app-tutorial/)). While those tutorials certainly have merit, I am going to share my thought process from beginning to end.
 
 The application I built is simple enough. When someone loads the app, they are prompted to enter their username and begin chatting:
 
 ![Welcome Screen](./welcome-screen.png)
-
-![Chat Screen](./chat-screen.png)
 
 The application ultimately runs on Node with help from NW.js (previously known as node-webkit). NW.js is advantageous because it enables us to code cross-platform desktop applications using our favorite web technologies. For this application, I chose to use React and Redux.
 
