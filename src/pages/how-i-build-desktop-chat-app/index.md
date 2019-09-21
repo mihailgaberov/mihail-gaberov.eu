@@ -82,4 +82,11 @@ In our app, we have three simple reducers, which are responsible for those parts
 
 Redux, as state management library, can be used with any other UI framework, practically every app that needs to have a state can benefit from using Redux. If you want to go deeper, start from their website and follow along.
 
+## Side Effects Handling — Redux Thunks
+One of the best known approaches for managing side effects in a redux app is called [redux-think](https://github.com/reduxjs/redux-thunk). This is what we use in our application as well. If you want to learn more details about redux thunks and how to use them, I recommend their website as a starting point and then build a small application, like this one for example :).
+
+In our project, in [/src/actions folder](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/actions), is where I put the thunks used in the demo application. And in [/store](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/store) directory is where the configurations for the redux store live.
+
+
+
 🔥 Thanks for reading! 🔥
