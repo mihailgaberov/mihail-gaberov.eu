@@ -4,7 +4,7 @@
   "description": "Mihailizing: Personal blog by Mihail Gaberov",
   "author": "Mihail Gaberov <mihail.gaberov@gmail.com>",
   "version": "1.0.4",
-  "homepage": "https://mihail-gaberov.eu/blog",
+  "homepage": "https://mihail-gaberov.eu/",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
