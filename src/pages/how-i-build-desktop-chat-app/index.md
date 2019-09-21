@@ -87,6 +87,11 @@ One of the best known approaches for managing side effects in a redux app is cal
 
 In our project, in [/src/actions folder](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/actions), is where I put the thunks used in the demo application. And in [/store](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/store) directory is where the configurations for the redux store live.
 
+## Make it desktop — NW.js
+The part of our application that makes it possible for our app to run on desktop is taken care of by a library called [NW.js](https://nwjs.io/). Remember that we are building a desktop application. Exactly the desktop part is going to be implemented via NW.js. Similar to [Electron](https://electronjs.org/), another library for building desktop applications, NW.js provides a way to the developers to use their web skills to build applications that can run on a desktop. This means you can still use your JavaScript/React skills when building an app and then leverage the power of the desktop operating system via Nw.js APIs. In other words, Nw.js gives you the ability to make a skeleton app, which can be “filled” with your UI, no matter what library you have used to create it. And the best thing is that such an app has access to Node.js/NW.js APIs and the DOM in the same JavaScript context.
+
+Since we mentioned the other big player in the field of building cross-platform desktop apps, let me give you a brief comparison between the two.
+
 
 
 🔥 Thanks for reading! 🔥
