@@ -46,5 +46,30 @@ __Answers__ (following the order of the questions):
 - The interaction between the components would be pretty straight forward. The user should be able to use the main component that is a text input and a button to send messages. And a sidebar component to see the other chat participants.
 - The demo app should provide basic chat functionality — send and receive real-time messages. And be able to run on a desktop (without a browser).
 
+## Features
+I have decided to implement the following features to the demo app:
+
+- Send with Enter key
+- A sidebar with names and last active time
+- Welcome screen with input and validation with error messages
+- Chat area with auto-scroll to bottom
+- Chat message and time of sending.
+
+## Front End — React
+We are going to use [React](https://reactjs.org/) to build our user interface. Below, I am going to list the components I have created and a short explanation about each of them:
+
+- [ChatPane](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/components/ChatPane) — this is the main container-like component that contains the Participants and Conversation components and passes the data they need to visualize.
+- [Conversation](https://github.com/mihailgaberov/desktop-chat-nw/blob/master/src/components/Conversation/Conversation.jsx) — this is the component responsible for typing and sending chat messages.
+- [Footer](https://github.com/mihailgaberov/desktop-chat-nw/blob/master/src/components/Footer/Footer.jsx) — displays a simple footer message, containing the app name and version, as defined in package.json file.
+- [Header](https://github.com/mihailgaberov/desktop-chat-nw/blob/master/src/components/Header/Header.jsx) — header component holding the application menu bar.
+- [MenuAppBar](https://github.com/mihailgaberov/desktop-chat-nw/blob/master/src/components/MenuAppBar/MenuAppBar.jsx) — application menu bar component, simulating how a real menu bar would look like. The hamburger menu on the left and the profile dropdown menu on the right are fake — clickable, but not functional.
+- [Messages](https://github.com/mihailgaberov/desktop-chat-nw/blob/master/src/components/Messages/Messages.jsx) — a container component, holding a message itself — it has the name of the sender, the message content and the time of sending.
+- [Participants](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/components/Participants) — this component shows the name of a chat member and the time when he joined.
+- [Welcome](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/components/Welcome) — this component is responsible for displaying the login page — the starting point of our app, where we have logic related to checking for certain allowed usernames and storing them to the local storage for later use. I also implemented basic error handling logic, which shows an error when the selected username is not correct, as per CometChat API (in this specific case for our demo) registered usernames — superhero1, superhero2 and so on till 5.
+
+
+Here a visual representation of the app components:
+
+![Visual Components](./chat-app-components.png)
 
 🔥 Thanks for reading! 🔥
