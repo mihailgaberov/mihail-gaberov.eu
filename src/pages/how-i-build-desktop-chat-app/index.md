@@ -107,6 +107,74 @@ Since we mentioned the other big player in the field of building cross-platform 
   - Because of how NW.js was implemented concepts of Node context and web context were invented.
   - By using the [multi-context](https://github.com/nodejs/node-v0.x-archive/commit/756b622) feature of Node, Electron doesn't introduce a new JavaScript context in web pages.
 
+## Chat — CometChat
+The usage of CometChat API is pretty straight-forward. It’s a RESTFull API, on which is built another layer of abstraction - CometChat SDK. It allows us to call directly exposed methods for different actions we might want to perform, such as send. Here an example of such a method:
 
+```js
+return CometChat.sendMessage(textMessage).then(    
+  message => {      
+    console.log("Message sent successfully:", message);      
+    return message;
+  }, 
+  error => {      
+    console.log("Message sending failed with error:", error);    
+  }
+);
+```
+
+You may see all the Chat API logic in [/src/chat-api](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/chat-api) folder. There you will also see the mocks I created, which allow us to test our app without real connection to the API.
+
+## Improvements
+Every project deserves some thoughts after finishing the first phase. One part of this thought process would be dedicated to how it went, what was good and bad, and what might be done better. And one part would be dedicated to thinking about possible improvements.
+Here are a few ideas for our case. If someone goes to this direction and implement any of these for real, please do not forget to let me know :)
+
+- Waiting animation for when loading the chat history and the user list
+- Option for skipping the login screen, if already logged
+- Option for sending invitations to new users
+- Option for seeing the status of a message — sent, received, read
+- Emojis support
+- Inline links/images/video support, such that the user can see them interpreted — playing video, rendered image or web page to which a link is pointing.
+I have added these as [issues in my GitHub](https://github.com/mihailgaberov/desktop-chat-nw/issues), in case anyone wants to take a look.
+
+
+## Deploy on Netlify
+To deploy your application to Netlify platform you need to create an account first. Go to [their website](https://www.netlify.com/) and sign up for new account. After that go ahead and login. While still under Sites section, you should see a button for deploying new site from Git.
+
+![Deploy from Git button](./new_site_from_git_btn.png)
+
+Click it and follow the steps to create a new site for deployment from your GitHub repositories. Your process should be similar to what is shown in the image below.
+
+![Create New Site](./create-new-site.png)
+
+Now, the last step before having your app deployed is to make sure you have the correct build commands and environment variables in place. To do that, after you create your site for deployment, go to __Build & deploy__ settings screen and enter the following (don’t forget to use your repo URL):
+
+![Build and deploy](./build-and-deploy.png)
+
+Under __Environment__ section is where you need to enter the environment variables as defined in your .env file. Here is how it looks mine:
+
+![Environment](./env-vars.png)
+
+Note: _I have erased the values as this is supposed to be private info and you should not share yours as well._
+
+That should be enough for you to have your app deployed on Netlify. Keep in mind the __Deploys__ default settings are set to ‘auto publishing’, which means that it will trigger a deploy on each commit you do to the __master branch__ in your repo. This is the place where you can trigger a deploy manually as well. This is how my __Deploys__ screen looks like:
+
+![Deploys](./deploys.png)
+
+## Conclusion
+In this tutorial, we saw how can we leverage our web development skills to create applications that can run on a desktop. What we built is a demo application, that lacks a lot of a fully-featured-production-ready app features, but when one wants to learn and share, this would do the job. If you would like to deepen your knowledge in this direction, I would recommend you to try to improve it, by implementing features that are more likely to be seen in a real desktop application.
+
+There are plenty of opportunities to explore out there, I hope this tutorial entertained you enough to keep your flame of curiosity burning even more.
 
 🔥 Thanks for reading! 🔥
+
+__Notes:__
+
+- In order to use Nw.js DevTools you need to install the SDK build —  https://nwjs.io/downloads/ - version 0.38.2 or higher.
+
+__Resources:__
+
+- [Q: What is a ‘thunk’? A: The sound your head makes when you first hear about redux-thunk. Ok sorry, that was awful. But…daveceddia.com](https://daveceddia.com/what-is-a-thunk/)
+- [book] Cross-Platform Desktop Applications: Using Node, Electron, and NW.js
+- [book] Cross-platform Desktop Application Development: Electron, Node, NW.js, and React
+- [Thunk middleware for Redux](https://github.com/reduxjs/redux-thunk)
+- https://reactjs.org/docs/hooks-reference.html#useref
