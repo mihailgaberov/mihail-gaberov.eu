@@ -72,4 +72,14 @@ Here a visual representation of the app components:
 
 ![Visual Components](./chat-app-components.png)
 
+## State Management — Redux
+Every modern application these days has a state. Place in the memory where the application is storing certain data for later use. For our application state management, we use [Redux](https://redux.js.org/). Of course, for a simple app like this, we could go without using Redux at all. But, from the learning point of view (_after all we all do this for learning new stuff, right?_), I think it would be nice to see the whole cycle of sending a request to an API, going through a middleware (redux-thunks) and getting the response recorded to the state. And we will manage this state by using Redux.
+
+### How it works
+The main building blocks in a Redux app are called reducers — small functions used for managing the state. Simply said, what they do is accepting the old state object as input and, depending on certain actions (which are also passed in the same input), returning new state object. The new state could be changed in full or just partially.
+
+In our app, we have three simple reducers, which are responsible for those parts of the state, responsible for the users’ list, the login process and sending/receiving messages. All of them can be seen in [/src/reducers](https://github.com/mihailgaberov/desktop-chat-nw/tree/master/src/reducers) folder, along with a [file](https://github.com/mihailgaberov/desktop-chat-nw/blob/master/src/reducers/initialState.js) containing the initial state of our app.
+
+Redux, as state management library, can be used with any other UI framework, practically every app that needs to have a state can benefit from using Redux. If you want to go deeper, start from their website and follow along.
+
 🔥 Thanks for reading! 🔥
