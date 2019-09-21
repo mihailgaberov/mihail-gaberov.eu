@@ -3,7 +3,7 @@ title: "How I build a desktop chat app with CometChat and NW.js (and how you can
 date: "2019-09-17"
 ---
 
-This is not your typical "_paste this here_" and "_paste that there_"-type tutorial (you can find plenty of those here on [cometchat.com/tutorials](https://www.cometchat.com/tutorials/desktop-chat-app-tutorial/https//cometchat.com/tutorials)). While those tutorials certainly have merit, I am going to share my thought process from beginning to end.
+This is not your typical "_paste this here_" and "_paste that there_"-type tutorial (you can find plenty of those here on [cometchat.com/tutorials](https://www.cometchat.com/tutorials/desktop-chat-app-tutorial/)). While those tutorials certainly have merit, I am going to share my thought process from beginning to end.
 
 The application I built is simple enough. When someone loads the app, they are prompted to enter their username and begin chatting:
 
