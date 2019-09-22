@@ -4,7 +4,7 @@
   "description": "Mihailizing: Personal blog by Mihail Gaberov",
   "author": "Mihail Gaberov <mihail.gaberov@gmail.com>",
   "version": "1.0.4",
-  "homepage": "https://mihail-gaberov.eu/",
+  "homepage": "./",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
@@ -32,6 +32,7 @@
     "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-remark": "^2.2.4",
+    "http-server": "^0.11.1",
     "lodash": "^4.17.11",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
