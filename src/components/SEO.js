@@ -19,7 +19,7 @@ const query = graphql`
   }
 `;
 
-function SEO({ meta, image, title, description, slug, lang = 'en' }) {
+function SEO({ meta, image, title, description, slug, lang = 'en', canonical }) {
   return (
     <StaticQuery
       query={query}
@@ -39,6 +39,8 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
               : {
                   title: `${siteMetadata.title} — A blog by Mihail Gaberov`,
                 })}
+
+            link={canonical ? [{ rel: 'canonical', key: canonical, href: canonical }] : []}
             meta={[
               {
                 name: 'description',
@@ -87,7 +89,8 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
                     ]
                   : []
               )
-              .concat(meta)}
+              .concat(meta)
+            }
           />
         );
       }}
@@ -102,6 +105,7 @@ SEO.defaultProps = {
 };
 
 SEO.propTypes = {
+  canonical: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
   meta: PropTypes.array,

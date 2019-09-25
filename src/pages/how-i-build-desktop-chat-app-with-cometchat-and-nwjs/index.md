@@ -1,6 +1,8 @@
 ---
 title: "How I build a desktop chat app with CometChat and NW.js (and how you can too)"
 date: "2019-09-17"
+canonical: " https://www.cometchat.com/tutorials/desktop-chat-app-tutorial/"
+
 ---
 
 ![Chat Screen](./chat-screen.png)
