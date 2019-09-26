@@ -31,6 +31,7 @@ export default ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.spoiler}
         slug={post.fields.slug}
+        canonical={post.frontmatter.canonical}
       />
       <main>
         <article>
@@ -119,7 +120,8 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title
+        title,
+        canonical
       }
       fields {
         slug
