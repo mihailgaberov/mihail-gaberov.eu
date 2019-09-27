@@ -4,6 +4,7 @@ date: "2019-09-17"
 canonical: "https://cometchat.com/tutorials/desktop-chat-app-tutorial/"
 ---
 
+
 ![Chat Screen](./chat-screen.png)
 ###### Chat Screen
 ---
