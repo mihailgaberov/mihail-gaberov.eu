@@ -62,7 +62,6 @@ You may also need to run:
 8. If you are going to use things, such as ```docker-compose up```, you will need to install Docker Tools as well. You may do it by running the following commands in PowerShall:
 ```bash
 choco install docker-cli
-
 choco install docker-compose
 ```
 
