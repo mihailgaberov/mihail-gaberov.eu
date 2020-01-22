@@ -18,7 +18,7 @@ We have Windows 10 OS Home edition on our machine and we would like to have Dock
 ## Actions
 After defining what we want, let's see how to achieve it. Here are the steps I followed. It worked for me, which makes me share it with you, so maybe I would save someone a few days of going back and forth to StackOverflow! 😐
 
-After some reading, I found this [article](http://support.divio.com/en/articles/646695-how-to-use-a-directory-outside-c-users-with-docker-toolbox-docker-for-windows), which explains that it is possible to use Docker in Windows 10 Home by leveraging a Linux virtual machine and have docker containers run on it.
+After some reading, I found this [article](http://support.divio.com/en/articles/646695-how-to-use-a-directory-outside-c-users-with-docker-toolbox-docker-for-windows), which explains that it is possible to use Docker in Windows 10 Home by leveraging a Linux virtual machine and have docker containers running on it.
 
 1. First thing you need is, to install a software called [Oracle VM VirtualBox](https://www.virtualbox.org/). It gives you the ability to have multiple virtual machines installed on your physical one. This way we can have a virtual machine which will be running Linux where our Docker will live.
 2. Then use Windows PowerShall and [Chocolatey](https://chocolatey.org/), your Windows package manager, to install a _docker-machine_ by running the following:
