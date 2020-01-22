@@ -71,7 +71,7 @@ These will install everything you need to start using Docker on your Windows 10 
 
 Now that we have all we need ready to use, we may spend our time on actual learning, either by following a docker related tutorial or a book. No matter what you want to do next, you have all the tools you will need. I personally will try to [finish](https://github.com/mihailgaberov/microservices) the previously mentioned tutorial and then, who knows, may be I will start using Docker for each next project I do.
 
-By the way, during the process of searching described above, I found a very promising book which is specifically about Docker. It's called _"Docker in Practice" by Ian Miell_. If this interests you as well, you might want to take a look.
+By the way, during the process of researching, I found a very promising book which is specifically about Docker. It's called _"Docker in Practice" by Ian Miell_. If this interests you as well, you might want to take a look.
 
 🔥 Thanks for reading! 🔥
 
