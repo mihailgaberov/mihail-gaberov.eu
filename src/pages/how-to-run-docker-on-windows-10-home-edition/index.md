@@ -1,6 +1,7 @@
 ---
 title: "How to run Docker on Windows 10 Home edition"
 date: "2020-01-22"
+canonical: "https://mihail-gaberov.eu/how-to-run-docker-on-windows-10-home-edition/"
 ---
 
 
