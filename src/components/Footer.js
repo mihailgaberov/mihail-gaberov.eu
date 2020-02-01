@@ -12,7 +12,7 @@ class Footer extends React.Component {
         }}
       >
         <div style={{ float: 'right' }}>
-          © Mihail Gaberov 2019. All rights reserved.
+          © Mihail Gaberov 2020. All rights reserved.
         </div>
         <a
           href="https://mobile.twitter.com/mihailgaberov"
