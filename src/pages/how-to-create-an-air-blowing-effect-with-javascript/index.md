@@ -1,7 +1,6 @@
 ---
 title: "How to create an air blowing effect with JavaScript"
 date: "2020-07-02"
-canonical: "https://mihail-gaberov.eu/how-to-crate-an-air-blowing-effect-with-javscript"
 ---
 
 >_Have you ever wondered how can you create a realistic ball blowing effect with JavaScript? Like the one shown in the evening TV shows, where multiple balls are being mixed in a sphere-like object by leveraging air pressure. If you have answered with 'yes', please keep reading below._
