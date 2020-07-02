@@ -30,3 +30,31 @@ Having all the assets we need, we are now ready to go deeper and implement some 
 
 ## Implement, test, implement, test
 Before going to the animation itself, we need to mention few Matter.js specific things. When creating animations with this library, one needs to define as minimum:
+- [Matter.Engine](https://brm.io/matter-js/docs/classes/Engine.html) - this is the controller that manages updating the simulation of the world.
+- [Matter.World](https://brm.io/matter-js/docs/classes/World.html) - contains methods for creating and manipulating the world composite.
+- [Matter.Render](https://brm.io/matter-js/docs/classes/Render.html) - module is a simple HTML5 canvas based renderer for visualizing instances of Matter.Engine.
+
+In our example we use further: 
+- [Matter.Bodies](https://brm.io/matter-js/docs/classes/Bodies.html) for creating the different parts on the scene (the balls, the circle invisible bounds).
+- [Matter.Body](https://brm.io/matter-js/docs/classes/Bodies.html) for applying forces to the bodies and thus create nice physics simulation of a blower.
+- [Matter.Runner](https://brm.io/matter-js/docs/classes/Runner.html) to run the whole thing.
+- [Matter.Events](https://brm.io/matter-js/docs/classes/Events.html) that gives us ability to have listeners for different events that could happen during the animation. In this specific case we use it for listening the 'tick' event, which is occurring on every render tick. In the event handler function we do our checking for when the balls are colliding with the walls, and we apply the relevant forces to create a bounce effect. We postpone the listening for this event with a 3 seconds timeout, so we can have more lotto-like effect. Imagine a sphere where the balls are starting to move when let's say you press a button.
+
+## Try and Play
+In the beginning of this article, I have posted the link to the [GitHub repository](https://github.com/mihailgaberov/bingo-blower) with the code and the assets in it. If you want to play more, you can easily check it out and try different modifications. You might want to play with the forces you apply, or the size of the balls, etc. _There is plenty of room for experimenting when we talk about Physics_. And it's always fun, especially when we add animations to the picture. Take a peek i
+
+## Conclusion
+As it turns out, [Matter.js](https://brm.io/matter-js/index.html) is a great library for doing 2d realistic animations backed up by the laws of Physics. Of course, there are other options one might choose from, but as we said, this is a matter of choice and project needs. I personally would recommend at least giving a try and see for yourself. For someone with Flash experience or similar, Matter.js is definitely easy to start with. And if you are stubborn enough to keep trying different settings, you might achieve incredible results.
+
+🔥 Thanks for reading! 🔥
+
+## Resources
+- https://brm.io/matter-js/ - The website of the library
+- https://burakkanber.com/blog/modeling-physics-in-javascript-introduction/ - interesting and well explained articles related to physics in JavaScript
+- https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics/ - collisions detection tutorial
+- https://codepen.io/AlexRA96/full/egaxVV - bouncing ball example
+- https://codepen.io/Shokeen/pen/WjKmMG?editors=1010 - codepen example with applying forces
+- https://code.tutsplus.com/tutorials/getting-started-with-matterjs-body-module--cms-28835 - beginner tutorial to get you started with Matter.js
+- https://codepen.io/jh3y/pen/gOPmMyO?editors=0110 - another cool example with falling bears
+- https://codepen.io/danielgivens/pen/geKrRx - even cooler example with a circle clock and particles inside
+- https://codepen.io/dotcli/pen/NEXrQe - another example of circle bounds and particles (socks!) inside
