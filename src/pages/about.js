@@ -118,7 +118,7 @@ export default () => (
         </p>
         <p>
           Here you can{' '}
-          <a href="https://medium.com/@mihailgaberov" target="_blank" rel="noopener noreferrer">check out my Medium</a>{' '}
+          <a href="https://www.freecodecamp.org/news/author/mihail/" target="_blank" rel="noopener noreferrer">check out my freeCodeCamp</a>{' '}
           account, where my articles are published.
         </p>
       </li>
