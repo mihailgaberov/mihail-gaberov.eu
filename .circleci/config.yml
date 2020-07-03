@@ -14,11 +14,8 @@ jobs:
             - v1-deps-{{ .Branch }}
             - v1-deps
       - run:
-          name: Install NVM
-          command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-      - run:
           name: Install Latest Node.js
-          command: nvm install latest && nvm alias default latest
+          command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash && nvm install latest && nvm alias default latest
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfil
