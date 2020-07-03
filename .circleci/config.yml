@@ -14,14 +14,15 @@ jobs:
             - v1-deps-{{ .Branch }}
             - v1-deps
       - run:
-          name: Install Latest Node.js
-          command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash && nvm install latest && nvm alias default latest
-      - run:
-          - command: |
-                export NVM_DIR="$HOME/.nvm"
-                [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-                [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-                node -v
+          name: Install node@latest
+          command: |
+            set +e
+            touch $BASH_ENV
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+            echo 'export NVM_DIR="$HOME/.nvm"' >> $BASH_ENV
+            echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
+            echo 'nvm install v12.18.2' >> $BASH_ENV
+            echo 'nvm alias default v12.18.2' >> $BASH_ENV
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfil
