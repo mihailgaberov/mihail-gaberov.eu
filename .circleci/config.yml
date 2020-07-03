@@ -15,7 +15,7 @@ jobs:
             - v1-deps
       - run:
           name: Install Latest Node.js
-          command: nvm install latest && nvm alias default latest
+          command: yarn add nvm && nvm install latest && nvm alias default latest
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfil
