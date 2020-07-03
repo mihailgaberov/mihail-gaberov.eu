@@ -15,7 +15,6 @@ jobs:
             - v1-deps
       - run:
           name: Install Dependencies
-          node: latest
           command: yarn install --frozen-lockfil
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "cypress.prod.json" }}
