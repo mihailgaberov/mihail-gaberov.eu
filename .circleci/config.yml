@@ -2,7 +2,6 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node
       - image: cypress/base:8
         environment:
           TERM: xterm
@@ -37,6 +36,7 @@ jobs:
           command: $(yarn bin)/cypress run --env configFile=prod
   deploy:
     docker:
+      - image: circleci/node
       - image: circleci/python:2.7-jessie
     steps:
       - attach_workspace:
