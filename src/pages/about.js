@@ -3,11 +3,11 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import './about.css';
 import Footer from '../components/Footer';
-import CV from '../assets/cv/Mihail_Gaberov_Resume_Sep_2019.pdf';
+import CV from '../assets/curriculum-vitae/Mihail_Gaberov_Resume_Sep_2019.pdf';
 
 export default () => (
   <Layout>
-    <SEO />
+    <SEO/>
     <h1>About Me</h1>
     <p>
       There is one phrase I really like and it describes me and my way of
@@ -31,62 +31,27 @@ export default () => (
       </li>
       <li className="about-me-bullet">
         <h3>What I do</h3>
+        <p>Currently my main focus is on developing responsive web applications that run well on both desktop and mobile
+          devices.</p>
         <p>
-          Professionally I am focused mainly on developing web sites and
-          applications. Currently working mostly with{' '}
-          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-            React
-          </a>
-          ,{' '}
-          <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
-            Redux
-          </a>{' '}
-          and/or pure{' '}
-          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer">
-            Javascript
-          </a>{' '}
-          or{' '}
-          <a href="http://www.typescriptlang.org/index.html" target="_blank" rel="noopener noreferrer">
-            TypeScript
-          </a>
-          . Essential knowledge of{' '}
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-            target="_blank" rel="noopener noreferrer"
-          >
-            HTML5
-          </a>
-          /
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
-            target="_blank" rel="noopener noreferrer"
-          >
-            CSS3
-          </a>
-          (
-          <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
-            SASS
-          </a>
-          /
-          <a href="http://lesscss.org/" target="_blank" rel="noopener noreferrer">
-            LESS
-          </a>
-          )/
-          <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank" rel="noopener noreferrer">
-            JS(ES6/ES7)
-          </a>
-          . Previous experience with{' '}
-          <a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">
-            AngularJS
-          </a>{' '}
-          (both JS and Typescript versions) and{' '}
-          <a href="https://aurelia.io/" target="_blank" rel="noopener noreferrer">
-            Aurelia
-          </a>{' '}
-          (previously called Durandal) front-end frameworks. Besides that, I
-          like digging into everything new - technologies, frameworks, tools,
-          etc.
-        </p>
+          But my interests and curiosity are endless. Here is a list with of programming languages and technologies I
+          have proficiency with,
+          I have been playing with or I have at least touched in my past experience. Ordering is based on recent
+          usage:</p>
+        <ul>
+          <li><strong>Programming languages:</strong> TypeScript, JavaScript/Node.js, HTML, CSS/SASS, Python, PHP,
+            ActionScript 3.0/2.0, C#, Java/JSP/Java Servlets, VB .NET
+          </li>
+          <li><strong>Frameworks:</strong> React.js, Vue.js, AngularJS, Redux, Moment.js, date-fns, Redux Thunk, Jest,
+            Mocha, Chai, Aurelia, Flux, Saga, jQuery, MaterialUI, Jasmine, SinonJS, BackboneJS, Bootstrap, Foundation
+          </li>
+          <li><strong>Databases:</strong> MongoDB, MySQL, MSSQL, PL/SQL</li>
+        </ul>
+
+        <p>I have gained experience in a variety of industries, such as: online gaming/gambling, financial/banking,
+          eCommerce, environmental and legal property data gathering, analyzing and processing.</p>
+
+        <p>I also like to share what I learn in my <a href="https://mihail-gaberov.eu">blog</a>, so I can really learn it.</p>
       </li>
       <li className="about-me-bullet">
         <h3>More about me</h3>
@@ -106,7 +71,8 @@ export default () => (
         </p>
         <p>
           Here you can{' '}
-          <a href="https://github.com/mihailgaberov" target="_blank" rel="noopener noreferrer">check out my GitHub</a>{' '}
+          <a href="https://github.com/mihailgaberov" target="_blank" rel="noopener noreferrer">check out my
+            GitHub</a>{' '}
           account, where most of my pet projects live.
         </p>
         <p>
@@ -118,7 +84,8 @@ export default () => (
         </p>
         <p>
           Here you can{' '}
-          <a href="https://www.freecodecamp.org/news/author/mihail/" target="_blank" rel="noopener noreferrer">check out my freeCodeCamp</a>{' '}
+          <a href="https://www.freecodecamp.org/news/author/mihail/" target="_blank" rel="noopener noreferrer">check out
+            my freeCodeCamp</a>{' '}
           account, where my articles are published.
         </p>
       </li>
@@ -129,6 +96,6 @@ export default () => (
         </a>
       </li>
     </ul>
-    <Footer />
+    <Footer/>
   </Layout>
 );
