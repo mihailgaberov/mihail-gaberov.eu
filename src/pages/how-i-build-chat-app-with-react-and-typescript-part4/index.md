@@ -32,7 +32,7 @@ So I started building component by component as I described them in the [previou
 After I have done all from above, the implementation of the chat page and its components was fairly easy. I had to take care of the visual part manly and make the integration with the Redux store. As you [saw already](https://github.com/mihailgaberov/chat/blob/master/src/components/pages/Chat/ChatPage.tsx), I had to implement only two components which are shown and used on the Chat page - ChatArea and MessageSender.
 
 ### Adding improvements
-I want to say a few words here regarding the app improvements we did or will do in future. Usually when we have a new requirement (__let's call it "requirement", that makes is sound closer to what would be in a real project_), is again a very good idea to do some initial research, instead of jumping directly into implementation. You will be surprised how many solutions are already out there, waiting for us to use them.
+I want to say a few words here regarding the app improvements we did or will do in future. Usually when we have a new requirement (_let's call it "requirement", that makes is sound closer to what would be in a real project_), is again a very good idea to do some initial research, instead of jumping directly into implementation. You will be surprised how many solutions are already out there, waiting for us to use them.
 
 >_In other words, we don't have to invent the wheel again._
 
