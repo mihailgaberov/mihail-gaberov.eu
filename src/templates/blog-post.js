@@ -1,5 +1,6 @@
 import { css } from '@emotion/core';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useScrollPercentage } from 'react-scroll-percentage';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
@@ -13,6 +14,7 @@ const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
 
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
+  const [ref, percentage] = useScrollPercentage()
   let { previous, next, slug } = pageContext;
 
   const GITHUB_USERNAME = 'mihailgaberov';
@@ -24,6 +26,13 @@ export default ({ data, pageContext }) => {
   const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `https://mihail-gaberov.eu${slug}`
   )}`;
+
+  useEffect(() => {
+    if (post) {
+      const percent = Math.round(percentage * 100)
+      document.title = `${percent}% ${post.frontmatter.title}`
+    }
+  }, [percentage])
 
   return (
     <Layout>
@@ -38,7 +47,9 @@ export default ({ data, pageContext }) => {
           <header>
             <h1>{post.frontmatter.title}</h1>
           </header>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div ref={ref}>
+            {post && <div dangerouslySetInnerHTML={{ __html: post.html }} />}
+          </div>
           <footer>
             <p>
               <a href={discussUrl} target="_blank" rel="noopener noreferrer">
