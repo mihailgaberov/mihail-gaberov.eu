@@ -78,7 +78,7 @@ Here is my list with the features I wanted to implement initially:
 
 #### Improvements
 At the time of writing this, there are still some pending features I would like to implement. Below is the list of all improvements I did or plan to do in future (the ones with the thumb emoji are already implemented):
-Add video chat feature.
+ - Add video chat feature.
  - 👍 Added AM/PM time formatting for when 12h mode is selected.
  - 👍 Added possibility to send message via ENTER by default. If the setting to send messages with CTRL+ENTER is ON, then this is going to be the only way (except via mouse/touch of course).
 - 👍 Optimized for iDevices (media queries).
