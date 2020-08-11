@@ -45,7 +45,7 @@ import ChatArea from '../../ChatArea';
  
  The same pattern is used for most of the components, exception are only the pages, i.e. the components which play the role of parents for all the inner parts - [ChatPage](https://github.com/mihailgaberov/chat/tree/master/src/components/pages/Chat) and [SettingsPage](https://github.com/mihailgaberov/chat/tree/master/src/components/pages/Settings).
  
- So, with that said, I think we can see what would be our application structure when we try to "_componentize_" it. Here a list of the components I came up:
+ So, with that said, I think we can see what would be our application structure when we try to "_componentize_" it. Here a list of the components I came up with:
  
 ![Components](./1.png)
 
