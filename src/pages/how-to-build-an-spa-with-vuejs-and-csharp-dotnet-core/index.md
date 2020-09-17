@@ -1,5 +1,5 @@
 ---
-title: "How to Build a SPA with Vue.js and C# Using .NET Core"
+title: "How to Build an SPA with Vue.js and C# Using .NET Core"
 date: "2020-09-16"
 ---
 
