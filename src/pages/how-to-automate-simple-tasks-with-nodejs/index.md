@@ -80,9 +80,10 @@ This made me think – what data structure did I need to put the data in, in ord
 
 And from here you have several options:
 
-    1. You could do as I did in my example – use JavaScript Array methods such as map, filter, and reduce in a more functional manner. Or,
+1.You could do as I did in my example – use 
+JavaScript Array methods such as map, filter, and reduce in a more functional manner. Or,
 
-    2 .You could go the old fashioned way and use regular [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to iterate over the array and do the calculation. Such loops could be for-, while-, forEach or even do-while JavaScript loops. In such small programs the performance is negligible, so it's up to you what to use.
+2.You could go the old fashioned way and use regular [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to iterate over the array and do the calculation. Such loops could be for-, while-, forEach or even do-while JavaScript loops. In such small programs the performance is negligible, so it's up to you what to use.
 
 Both choices would work fine. What is more important here is that __you should always make your decisions based on what your end goal is.__
 
