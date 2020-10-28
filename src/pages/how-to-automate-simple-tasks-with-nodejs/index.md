@@ -1,5 +1,5 @@
 ---
-title: "Automate your expenses with Node.js"
+title: "How to Automate Simple Tasks with Node.js"
 date: "2020-10-27"
 ---
 
