@@ -3,7 +3,6 @@ title: "How to Automate Simple Tasks with Node.js"
 date: "2020-10-27"
 ---
 
-
 ![Head image](./head-image.jpg)
 
 ##### Recently, I had to travel through several countries by car 🚗. There were a lot of tolls to pay💰 and a lot of gasoline⛽ to fill. Which meant a lot of bills.
