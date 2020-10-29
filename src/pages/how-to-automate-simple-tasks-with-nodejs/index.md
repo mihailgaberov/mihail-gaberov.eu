@@ -77,18 +77,17 @@ In this specific case my goal was very simple. I had some numbers that I needed 
 
 This made me think – what data structure did I need to put the data in, in order to have multiple choices for easy processing? That's how I came up with an array. After all, it's one of the simplest and most-used data structures in JavaScript.
 
-And from here you have several options:
-
-1.You could do as I did in my example – use 
+From here you have several options:
+1. You could do as I did in my example – use 
 JavaScript Array methods such as map, filter, and reduce in a more functional manner. Or,
 
-2.You could go the old fashioned way and use regular [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to iterate over the array and do the calculation. Such loops could be for-, while-, forEach or even do-while JavaScript loops. In such small programs the performance is negligible, so it's up to you what to use.
+2. You could go the old-fashioned way and use regular [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to iterate over the array and do the calculation. Such loops could be for-, while-, forEach or even do-while JavaScript loops. In such small programs the performance is negligible, so it's up to you what to use.
 
 Both choices would work fine. What is more important here is that __you should always make your decisions based on what your end goal is.__
 
 In this article I discussed a very short and quick to implement automation tool. It did the job I needed it to do. Given the fact I didn't have much time to invest, the first working solution was good enough.
 
-But there will be cases where you should perform a much more sophisticated analysis in advance so that you end up with good quality software in the end.
+There will be cases, of course, where you should perform a much more sophisticated analysis in advance so that you end up with good quality software in the end.
 
 >_Keep your end goal as your guide when deciding what to do and how to do it, and you will always be on track.
 
