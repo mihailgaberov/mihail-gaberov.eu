@@ -42,7 +42,7 @@ export default () => (
           <li><strong>Programming languages:</strong> TypeScript, JavaScript/Node.js, HTML, CSS/SASS, Python, PHP,
             ActionScript 3.0/2.0, C#, Java/JSP/Java Servlets, VB .NET
           </li>
-          <li><strong>Frameworks:</strong> React.js, Vue.js, AngularJS, Redux, Moment.js, date-fns, Redux Thunk, Jest,
+          <li><strong>Frameworks:</strong> React.js, Angular, AngularJS, Vue.js, Redux, Moment.js, date-fns, Redux Thunk, Jest,
             Mocha, Chai, Aurelia, Flux, Saga, jQuery, MaterialUI, Jasmine, SinonJS, BackboneJS, Bootstrap, Foundation
           </li>
           <li><strong>Databases:</strong> MongoDB, MySQL, MSSQL, PL/SQL</li>
