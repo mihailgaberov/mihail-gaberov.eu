@@ -21,7 +21,7 @@ class Bio extends React.Component {
         <p style={{ maxWidth: 310 }}>
           Personal blog by{' '}
           <a
-            href="https://www.linkedin.com/in/mihail-gaberov-6a73b03a/"
+            href="https://www.linkedin.com/in/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-mihail-gaberov-6a73b03a/"
             target="_blank" rel="noopener noreferrer"
           >
             Mihail Gaberov
