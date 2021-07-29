@@ -22,7 +22,7 @@ jobs:
             echo 'export NVM_DIR="$HOME/.nvm"' >> $BASH_ENV
             echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
             echo 'nvm install v16.5.0' >> $BASH_ENV
-            echo 'nvm alias default v12.18.2' >> $BASH_ENV
+            echo 'nvm alias default v16.5.0' >> $BASH_ENV
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfil
