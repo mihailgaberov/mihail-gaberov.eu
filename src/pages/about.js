@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import './about.css';
 import Footer from '../components/Footer';
-import CV from '../assets/curriculum-vitae/Mihail_Gaberov_Resume_Aug_2020.pdf';
+import CV from '../assets/curriculum-vitae/Mihail_Gaberov_Resume_Aug_2021.pdf';
 
 export default () => (
   <Layout>
