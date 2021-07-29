@@ -10,8 +10,6 @@
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "cross-env prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
-    "develop": "gatsby develop",
-    "start": "yarn run develop",
     "build": "rimraf public && rimraf .cache && gatsby build --prefix-paths",
     "cy:run": "cypress run --env configFile=dev",
     "cy:open": "cypress open --env configFile=dev",
