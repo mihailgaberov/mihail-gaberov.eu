@@ -64,7 +64,7 @@ export default () => (
         </p>
         <p>
           Here you can{' '}
-          <a href="https://www.linkedin.com/in/mihail-gaberov-6a73b03a/" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.linkedin.com/in/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-mihail-gaberov-6a73b03a/" rel="noopener noreferrer" target="_blank">
             check out my LinkedIn
           </a>{' '}
           account, where you also can take a look at my professional life.
